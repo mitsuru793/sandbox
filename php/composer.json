@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tightenco/collect": "^5.4",
+        "illuminate/container": "^5.4"
+    }
+}
