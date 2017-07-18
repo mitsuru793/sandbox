@@ -66,4 +66,22 @@ tmp.php -> 2017-07-17_hello_world.php
 2017-07-17 [source](./2017-07-17_use_compact.php)  
 
 ### laravelのCollection->eachでcontinue, breakするにはreturnとfalseを使う。
-2017-07-17 [source](./2017-07-17_use_return_and_false_to_continue_and_break_for_laravel_collection.php)
+2017-07-17 [source](./2017-07-17_use_return_and_false_to_continue_and_break_for_laravel_collection.php)  
+
+### array_mapでreturnを書かない場合は、nullが入る。
+2017-07-18 [source](./2017-07-18_array_map_insert_null_when_no_return.php)  
+
+### Eloquentでテーブルを作り、レコードを挿入する。
+2017-07-18 [source](./2017-07-18_create_table_and_insert_records_with_eloquent.php)  
+
+### laravelのEloquentでカスタムコレクションを作る。
+2017-07-18 [source](./2017-07-18_make_eloquent_custom_collection.php)  
+
+### Eloquentでテーブル名と違う名前でモデルを作り、関連テーブルから参照する。
+2017-07-18 [source](./2017-07-18_refer_model_being_different_from_table_name_with_eloquent.php)  
+
+### debug_backtraceで呼び出し元の関数を特定する。
+2017-07-18 [source](./2017-07-18_specify_caller_function_with_debug_backtrace.php)  
+
+### EloquentのローカルスコープはwhereHasのクロージャの中でも使える。
+2017-07-18 [source](./2017-07-18_use_local_scope_of_eloquent_in_wherehas.php)
