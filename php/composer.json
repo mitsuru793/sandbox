@@ -6,6 +6,14 @@
         "nikic/PHP-Parser": "^3.0",
         "illuminate/console": "^5.4",
         "underscore/Underscore.php": "^1.3",
-        "illuminate/events": "^5.4"
+        "illuminate/events": "^5.4",
+        "sebastian/git": "^2.1",
+        "danielstjules/stringy": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "Lib/"
+        },
+        "files": ["Lib/functions.php"]
     }
 }
