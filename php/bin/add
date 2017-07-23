@@ -1,0 +1,45 @@
+#!/usr/bin/env php
+<?php
+/*
+ファイル名の先頭に今日の日付をつけて、そのファイル名でコミットする。
+
+./bin/add tmp.php this is temp file
+*/
+
+// $argv[0]は実行したスクリプト名
+if (count($argv) < 3) {
+    throw new ArgumentCountError('Arguments must be more than 2');
+}
+
+$filePath  = $argv[1];
+$titleWords = array_slice($argv, 2);
+
+$newPath = addDateAndTitle($filePath, $titleWords);
+rename($filePath, $newPath);
+commit($newPath, "add $newPath");
+
+function addDateAndTitle(string $filePath, array $titleWords) : string
+{
+    $ext = pathinfo($filePath, PATHINFO_EXTENSION);
+    $title = implode('_', $titleWords);
+
+    return dirname($filePath) . '/' . date('Y-m-d') . '_' . $title . ".$ext";
+}
+
+function commit(string $filePath, string $message)
+{
+    $commands = [
+        'stash',
+        "add $filePath",
+        "commit -m '$message'",
+        "stash pop",
+    ];
+    foreach ($commands as $cmd) {
+        git($cmd);
+    }
+}
+
+function git(string $command)
+{
+    exec("git $command");
+}
