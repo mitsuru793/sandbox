@@ -11,7 +11,9 @@
         "danielstjules/stringy": "^3.1",
         "phpunit/phpunit": "^6.2",
         "symfony/var-dumper": "^3.3",
-        "symfony/validator": "^3.3"
+        "symfony/validator": "^3.3",
+        "doctrine/annotations": "^1.5",
+        "doctrine/cache": "^1.7"
     },
     "autoload": {
         "psr-4": {
