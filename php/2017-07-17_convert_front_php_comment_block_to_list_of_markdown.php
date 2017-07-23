@@ -15,7 +15,6 @@ script a.php b.php
 source(./b.php)
 説明です。
 ```
-...
 */
 
 require_once __DIR__ . '/vendor/autoload.php';

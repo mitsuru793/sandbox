@@ -50,7 +50,6 @@ script a.php b.php
 source(./b.php)
 説明です。
 ```
-...
 
 ### インスタンスにクラスメソッドを呼び出しても、__callStaticは呼ばれない。
 2017-07-17 [source](./2017-07-17_not_call_callStatic_when_a_instance_calls_class_method.php)  
