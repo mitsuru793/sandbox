@@ -124,6 +124,10 @@ tmp.php -> 2017-07-17_hello_world.php
 2017-07-23 [source](./2017-07-23_commit_one_file_without_changing_stage.php)  
 `php script.php README.md 'first commit'`
 
+### nikic/PHP-Parserで特定のNodeを集めるVisitorを作成する。
+2017-07-23 [source](./2017-07-23_make_collect_node_with_only_one_visitor_of_php_parser.php)  
+集めるNodeごとにVisitorを作る必要がなくなる。
+
 ### composerでインストールした各ライブラリのディレクトリサイズをソートして表示。
 2017-07-23 [source](./2017-07-23_sort_and_display_size_of_directory_of_library_is_installed_by_composer.php)  
 下記を使ってみる。
