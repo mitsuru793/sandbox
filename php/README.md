@@ -84,4 +84,52 @@ tmp.php -> 2017-07-17_hello_world.php
 2017-07-18 [source](./2017-07-18_specify_caller_function_with_debug_backtrace.php)  
 
 ### EloquentのローカルスコープはwhereHasのクロージャの中でも使える。
-2017-07-18 [source](./2017-07-18_use_local_scope_of_eloquent_in_wherehas.php)
+2017-07-18 [source](./2017-07-18_use_local_scope_of_eloquent_in_wherehas.php)  
+
+### underscore.phpのクラスメソッドを呼び出している部分を正規表現で抽出する
+2017-07-19 [source](./2017-07-19_extract_calller_as_class_method_of_underscore_with_regexp.php)  
+`__::pluck($people, 'name');`
+
+### __callStaticを定義していても、インスタンスメソッドをクラスメソッドとして呼び出すと警告される。
+2017-07-19 [source](./2017-07-19_warn_even_if_define_callStatic_when_call_class_method_as_instance.php)  
+
+### EloquentのconfigのcharsetはSET NAMESの代わりになる。
+2017-07-20 [source](./2017-07-20_config_of_eloquent_use_as_set_names.php)  
+[MySQL :: MySQL 5\.6 リファレンスマニュアル :: 10\.1\.4 接続文字セットおよび照合順序](https://dev.mysql.com/doc/refman/5.6/ja/charset-connection.html)
+
+### Stringyにputsメソッドを追加する。
+2017-07-21 [source](./2017-07-21_add_puts_method_to_Stringy.php)  
+[danielstjules/Stringy: A PHP string manipulation library with multibyte support](https://github.com/danielstjules/Stringy)
+
+### 画像が存在するかをcurl関数で確認する。
+2017-07-21 [source](./2017-07-21_confirm_if_image_exists_with_curl_function.php)  
+
+### gitで管理しているファイルを拡張子ごとに、ファイル数と行数を表示する。
+2017-07-21 [source](./2017-07-21_list_total_number_of_files_and_lines_each_extension_tracked_by_git.php)  
+ステージングにあるファイルもカウントされる。
+小さなスクリプトを書くには、下記を拡張すると良い。
+[sebastianbergmann/git: Simple PHP wrapper for Git](https://github.com/sebastianbergmann/git)
+
+### 改行をつけるecho、puts関数を作る。
+2017-07-21 [source](./2017-07-21_make_puts_function.php)  
+ライブラリとしてローカルに置いておくと便利です。インデントもつけれます。
+
+### 配列の要素である数値にインクリメント、代入演算子が使える。
+2017-07-21 [source](./2017-07-21_use_increment_and_assignment_operator_to_number_of_array.php)  
+
+### anatoo/fnparse.jsをPHPで書き直す
+2017-07-22 [source](./2017-07-22_rewrite_js_library_anatoo_fnparse.php)  
+[anatoo/fnparse\.js: An extremely simple parser combinator for JavaScript\.](https://github.com/anatoo/fnparse.js)
+
+### ステージングを変更せずに、対象のファイルを1つだけをコミットする。
+2017-07-23 [source](./2017-07-23_commit_one_file_without_changing_stage.php)  
+`php script.php README.md 'first commit'`
+
+### composerでインストールした各ライブラリのディレクトリサイズをソートして表示。
+2017-07-23 [source](./2017-07-23_sort_and_display_size_of_directory_of_library_is_installed_by_composer.php)  
+下記を使ってみる。
+[symfony/finder: \[READ\-ONLY\] Subtree split of the Symfony Finder Component](https://github.com/symfony/finder)
+
+### SymfonyのVaridationはクラスの他に、スカラ値も検証できる。
+2017-07-23 [source](./2017-07-23_symfony_can_validate_class_and_scala.php)  
+クラスにルールを追加するには、クラスメソッド、アノテーション、YAML、XMLがある。
