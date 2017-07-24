@@ -137,5 +137,8 @@ tmp.php -> 2017-07-17_hello_world.php
 2017-07-23 [source](./2017-07-23_symfony_can_validate_class_and_scala.php)  
 クラスにルールを追加するには、クラスメソッド、アノテーション、YAML、XMLがある。
 
+### in_arrayを使うより、連想配列にissetを使うほうが18倍速い。
+2017-07-24 [source](./2017-07-24_associative_array_is_18_times_faster_than_in_array.php)  
+
 ### laravelのcollectionのHigher Order Messageで、ゲッターを通して集めた値にフィルタリングをかける。
 2017-07-24 [source](./2017-07-24_filter_values_that_collected_by_heigher_order_message_of_laravel.php)
