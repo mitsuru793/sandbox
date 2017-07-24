@@ -16,7 +16,8 @@
         "doctrine/cache": "^1.7",
         "symfony/finder": "^3.3",
         "league/climate": "^3.2",
-        "abraham/twitteroauth": "^0.7.4"
+        "abraham/twitteroauth": "^0.7.4",
+        "vlucas/phpdotenv": "^2.4"
     },
     "autoload": {
         "psr-4": {
