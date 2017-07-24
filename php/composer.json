@@ -14,7 +14,9 @@
         "symfony/validator": "^3.3",
         "doctrine/annotations": "^1.5",
         "doctrine/cache": "^1.7",
-        "symfony/finder": "^3.3"
+        "symfony/finder": "^3.3",
+        "league/climate": "^3.2",
+        "abraham/twitteroauth": "^0.7.4"
     },
     "autoload": {
         "psr-4": {
