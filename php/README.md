@@ -136,3 +136,6 @@ tmp.php -> 2017-07-17_hello_world.php
 ### SymfonyのVaridationはクラスの他に、スカラ値も検証できる。
 2017-07-23 [source](./2017-07-23_symfony_can_validate_class_and_scala.php)  
 クラスにルールを追加するには、クラスメソッド、アノテーション、YAML、XMLがある。
+
+### laravelのcollectionのHigher Order Messageで、ゲッターを通して集めた値にフィルタリングをかける。
+2017-07-24 [source](./2017-07-24_filter_values_that_collected_by_heigher_order_message_of_laravel.php)
