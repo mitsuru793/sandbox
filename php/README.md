@@ -149,3 +149,8 @@ tmp.php -> 2017-07-17_hello_world.php
 
 配列のkeyにid(数字)を使っている時にarray_mergeを使うと、0から振り直されるため+をつかう。
 idはユニークのため、+で重複を許さないのも有効である。
+
+### PDOのメソッドをEloquentで代用する。
+2017-07-25 [source](./2017-07-25_use_eloquent_instead_of_pdo.php)  
+Eloquentのメソッドを使うとデバッグのログが取れるのが良い。
+だがgetPdoを使うのが速い。
