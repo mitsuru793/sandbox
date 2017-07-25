@@ -141,4 +141,11 @@ tmp.php -> 2017-07-17_hello_world.php
 2017-07-24 [source](./2017-07-24_associative_array_is_18_times_faster_than_in_array.php)  
 
 ### laravelのcollectionのHigher Order Messageで、ゲッターを通して集めた値にフィルタリングをかける。
-2017-07-24 [source](./2017-07-24_filter_values_that_collected_by_heigher_order_message_of_laravel.php)
+2017-07-24 [source](./2017-07-24_filter_values_that_collected_by_heigher_order_message_of_laravel.php)  
+
+### 配列の結合にarray_mergeを使うと、添字が壊れる時は+を使うと良いこともある。
+2017-07-25 [source](./2017-07-25_plus_mark_keeps_array_index.php.php)  
++を使うと重複したkeyの値は上書きされない。添字を維持するarray_mergeのような関数はない？
+
+配列のkeyにid(数字)を使っている時にarray_mergeを使うと、0から振り直されるため+をつかう。
+idはユニークのため、+で重複を許さないのも有効である。
