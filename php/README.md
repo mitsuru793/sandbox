@@ -158,5 +158,8 @@ Eloquentのメソッドを使うとデバッグのログが取れるのが良い
 ### twitter apiを"abraham/twitteroauth"で叩く
 2017-07-26 [source](./2017-07-26_call_tweet_api_with_abraham_twitterauth.php)  
 
+### ===は配列の中身を再帰的に比較する
+2017-07-26 [source](./2017-07-26_strict_equal_operator_compares_array_recursively.php)  
+
 ### 組み込み関数のexecはコマンドの実行が終わるまで、PHPスレッドを待機させる。
 2017-07-26 [source](./2017-07-26_wait_to_finish_exec.php)
