@@ -18,6 +18,7 @@ $newPath = addDateAndTitle($filePath, $titleWords);
 rename($filePath, $newPath);
 commit($newPath, "add $newPath");
 
+
 function addDateAndTitle(string $filePath, array $titleWords) : string
 {
     $ext = pathinfo($filePath, PATHINFO_EXTENSION);
@@ -28,15 +29,12 @@ function addDateAndTitle(string $filePath, array $titleWords) : string
 
 function commit(string $filePath, string $message)
 {
-    $commands = [
-        'stash',
-        "add $filePath",
-        "commit -m '$message'",
-        "stash pop",
-    ];
-    foreach ($commands as $cmd) {
-        git($cmd);
-    }
+    git('stash');
+    exec('bin/toc 2017-* > README.md');
+    git('add README.md');
+    git("add $filePath");
+    git("commit -m '$message'");
+    git("stash pop");
 }
 
 function git(string $command)
