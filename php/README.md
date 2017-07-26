@@ -158,6 +158,9 @@ Eloquentのメソッドを使うとデバッグのログが取れるのが良い
 ### twitter apiを"abraham/twitteroauth"で叩く
 2017-07-26 [source](./2017-07-26_call_tweet_api_with_abraham_twitterauth.php)  
 
+### laravelで取得したレコードの値を全て文字列に変換する。
+2017-07-26 [source](./2017-07-26_conwert_all_values_of_recorad_to_string_in_laravel.php)  
+
 ### ===は配列の中身を再帰的に比較する
 2017-07-26 [source](./2017-07-26_strict_equal_operator_compares_array_recursively.php)  
 
