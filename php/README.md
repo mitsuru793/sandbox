@@ -158,6 +158,10 @@ Eloquentのメソッドを使うとデバッグのログが取れるのが良い
 ### twitter apiを"abraham/twitteroauth"で叩く
 2017-07-26 [source](./2017-07-26_call_tweet_api_with_abraham_twitterauth.php)  
 
+### composer requireしてコミットする。
+2017-07-26 [source](./2017-07-26_compoesr_require_and_commit.php)  
+`php script 'person/libname'`
+
 ### laravelで取得したレコードの値を全て文字列に変換する。
 2017-07-26 [source](./2017-07-26_conwert_all_values_of_recorad_to_string_in_laravel.php)  
 
