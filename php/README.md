@@ -154,3 +154,6 @@ idはユニークのため、+で重複を許さないのも有効である。
 2017-07-25 [source](./2017-07-25_use_eloquent_instead_of_pdo.php)  
 Eloquentのメソッドを使うとデバッグのログが取れるのが良い。
 だがgetPdoを使うのが速い。
+
+### 組み込み関数のexecはコマンドの実行が終わるまで、PHPスレッドを待機させる。
+2017-07-26 [source](./2017-07-26_wait_to_finish_exec.php)
