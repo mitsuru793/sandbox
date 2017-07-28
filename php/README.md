@@ -178,3 +178,6 @@ Eloquentのメソッドを使うとデバッグのログが取れるのが良い
 ### mysqlのログファイルで、ATTR_EMULATE_PREPARESが無効の時は2回DBにアクセスすることを確かめる。
 2017-07-28 [source](./2017-07-28_confirm_2_access_to_db_with_log_file_of_mysql_when_atrr_emulate_prepares_is_false.php)  
 bindValueは実行するだけで、mysqlのログファイルに書き込まれます。
+
+### 関数の実行時間を測るグローバル関数を作る
+2017-07-28 [source](./2017-07-28_make_global_function_to_calc_exec_function_time.php)
