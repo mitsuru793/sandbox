@@ -173,4 +173,8 @@ Eloquentのメソッドを使うとデバッグのログが取れるのが良い
 2017-07-26 [source](./2017-07-26_strict_equal_operator_compares_array_recursively.php)  
 
 ### 組み込み関数のexecはコマンドの実行が終わるまで、PHPスレッドを待機させる。
-2017-07-26 [source](./2017-07-26_wait_to_finish_exec.php)
+2017-07-26 [source](./2017-07-26_wait_to_finish_exec.php)  
+
+### mysqlのログファイルで、ATTR_EMULATE_PREPARESが無効の時は2回DBにアクセスすることを確かめる。
+2017-07-28 [source](./2017-07-28_confirm_2_access_to_db_with_log_file_of_mysql_when_atrr_emulate_prepares_is_false.php)  
+bindValueは実行するだけで、mysqlのログファイルに書き込まれます。
