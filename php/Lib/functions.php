@@ -22,3 +22,15 @@ function puts(string $str, $level = 0, $indent = '    ')
     }
     echo $out;
 }
+
+function execTime(callable $fn) : float
+{
+    $start = microtime(true);
+    $fn();
+    return microtime(true) - $start;
+}
+
+function putsExecTime(callable $fn, $level = 0, $indent = '    ') : void
+{
+    puts(execTime($fn), $level, $indent);
+}
