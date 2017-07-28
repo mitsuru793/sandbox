@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+/*
+php script hoge
+php script hoge.php
+カレントにテンプレートをコピー
+*/
+
+const TEMPLATE = __DIR__ . '/_new.php';
+$fileName = rtrim($argv[1], '.php');
+$template = file_get_contents(TEMPLATE);
+file_put_contents($fileName . '.php', $template);
