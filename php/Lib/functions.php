@@ -23,14 +23,16 @@ function puts(string $str, $level = 0, $indent = '    ')
     echo $out;
 }
 
-function execTime(callable $fn) : float
+function execTime(callable $fn, int $num = 1) : float
 {
     $start = microtime(true);
-    $fn();
+    for ($i = 0; $i < $num; $i++) {
+        $fn();
+    }
     return microtime(true) - $start;
 }
 
-function putsExecTime(callable $fn, $level = 0, $indent = '    ') : void
+function putsExecTime(callable $fn, int $num = 1, $level = 0, $indent = '    ') : void
 {
-    puts(execTime($fn), $level, $indent);
+    puts(execTime($fn, $num), $level, $indent);
 }
