@@ -23,7 +23,8 @@
         "fzaninotto/faker": "^1.6",
         "laravelcollective/html": "^5.4",
         "nette/forms": "^2.4",
-        "adamwathan/form": "^0.9.0"
+        "adamwathan/form": "^0.9.0",
+        "henrikbjorn/lurker": "^1.2"
     },
     "autoload": {
         "psr-4": {
