@@ -185,4 +185,7 @@ Laravelのは2度目以降の起動はPHPスクリプトを一度終わらせる
 1つのスクリプト内でループさせてテストはできなさそう。
 
 ### 関数の実行時間を測るグローバル関数を作る
-2017-07-28 [source](./2017-07-28_make_global_function_to_calc_exec_function_time.php)
+2017-07-28 [source](./2017-07-28_make_global_function_to_calc_exec_function_time.php)  
+
+### microtimeは秒単位で返す。小数はマイクロ秒単位まで持つという意味。
+2017-08-01 [source](./2017-08-01_microtime_have_until_micro_and_second_unit.php)
