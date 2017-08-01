@@ -188,4 +188,8 @@ Laravelのは2度目以降の起動はPHPスクリプトを一度終わらせる
 2017-07-28 [source](./2017-07-28_make_global_function_to_calc_exec_function_time.php)  
 
 ### microtimeは秒単位で返す。小数はマイクロ秒単位まで持つという意味。
-2017-08-01 [source](./2017-08-01_microtime_have_until_micro_and_second_unit.php)
+2017-08-01 [source](./2017-08-01_microtime_have_until_micro_and_second_unit.php)  
+
+### popenを使い、外部スクリプトの出力を終わるまで待たずに出力する。
+2017-08-01 [source](./2017-08-01_output_without_waiting_to_finish_external_script.php)  
+仕組みは分かっていない。
