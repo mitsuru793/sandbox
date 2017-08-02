@@ -193,3 +193,7 @@ Laravelのは2度目以降の起動はPHPスクリプトを一度終わらせる
 ### popenを使い、外部スクリプトの出力を終わるまで待たずに出力する。
 2017-08-01 [source](./2017-08-01_output_without_waiting_to_finish_external_script.php)  
 仕組みは分かっていない。
+
+### リポジトリクラスにEloquentとPDOを混在させて、モデルに変換させて取得する。
+2017-08-02 [source](./2017-08-02_repository_use_eloquent_and_pdo_to_convert_model_to_get_it.php)  
+参考: https://github.com/shin1x1/laravel-ddd-sample
