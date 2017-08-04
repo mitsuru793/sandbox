@@ -198,6 +198,15 @@ Laravelのは2度目以降の起動はPHPスクリプトを一度終わらせる
 2017-08-02 [source](./2017-08-02_repository_use_eloquent_and_pdo_to_convert_model_to_get_it.php)  
 参考: https://github.com/shin1x1/laravel-ddd-sample
 
+### カラムごとにレコードの要素がある配列を、1レコード1要素に変換する。
+2017-08-04 [source](./2017-08-04_comvert_array_has_record_value_each_column_to_1_record_each_1_element.php)  
+formのinputで`users[0][name]`ではなく`name[]`としか書けない場合を想定
+
+```
+['name' => ['Adrain Cruickshank', ...], 'age' => [33, ...]]
+[['name' => ['Adrain Cruickshank'], 'age' => 33], ...]
+```
+
 ### テーブルの各行のカラム値をformで送信する。
 2017-08-04 [source](./2017-08-04_submit_column_value_each_table_row_with_form.php)  
 配列で取得できるとModelを通じて登録するのが便利。
