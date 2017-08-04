@@ -197,3 +197,7 @@ Laravelのは2度目以降の起動はPHPスクリプトを一度終わらせる
 ### リポジトリクラスにEloquentとPDOを混在させて、モデルに変換させて取得する。
 2017-08-02 [source](./2017-08-02_repository_use_eloquent_and_pdo_to_convert_model_to_get_it.php)  
 参考: https://github.com/shin1x1/laravel-ddd-sample
+
+### テーブルの各行のカラム値をformで送信する。
+2017-08-04 [source](./2017-08-04_submit_column_value_each_table_row_with_form.php)  
+配列で取得できるとModelを通じて登録するのが便利。
