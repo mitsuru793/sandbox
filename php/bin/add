@@ -30,7 +30,7 @@ function addDateAndTitle(string $filePath, array $titleWords) : string
 function commit(string $filePath, string $message)
 {
     git('stash');
-    exec('bin/toc 2017-* > README.md');
+    exec(__DIR__ . '/toc 2017-* > README.md');
     git('add README.md');
     git("add $filePath");
     git("commit -m '$message'");
