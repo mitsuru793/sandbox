@@ -3,6 +3,10 @@
 ### 1ファイルでサーバを立てて、fetchでレンスポンスを取得する。
 2017-08-05 [source](./2017-08-05_build_http_server_and_fetch_its_response_in_only_a_file.js)  
 
+### generatorでsetTimeoutを同期的に処理する。
+2017-08-05 [source](./2017-08-05_deal_settimeout_synchrnously_with_generator.js)  
+参考: [generatorとJavaScriptの非同期処理 \- Qiita](http://qiita.com/hitsujiwool/items/316f3e8a41fb7dc3a119)
+
 ### Promiseでインクリメントする。
 2017-08-05 [source](./2017-08-05_increment_with_promise.js)  
 
