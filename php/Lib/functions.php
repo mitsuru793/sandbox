@@ -1,7 +1,13 @@
 <?php
 namespace Lib;
 
+use Illuminate\Database\Capsule\Manager as Capsule;
+use Illuminate\Database\Schema\MySqlBuilder;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Container\Container;
+use Illuminate\Database\Events\StatementPrepared;
 use Lib\Stringy;
+use PDO;
 
 function create($str, $encoding = null)
 {
@@ -35,4 +41,34 @@ function execTime(callable $fn, int $num = 1) : float
 function putsExecTime(callable $fn, int $num = 1, $level = 0, $indent = '    ') : void
 {
     puts(execTime($fn, $num), $level, $indent);
+}
+
+function makeLaravelSqlBuilder(array $config) : MySqlBuilder
+{
+    $capsule = new Capsule;
+
+    // Laravel5.4からはイベントリスナーでフェッチモードを変更
+    $dispatcher = new Dispatcher;
+    $dispatcher->listen(StatementPrepared::class, function ($event) {
+        $event->statement->setFetchMode(PDO::FETCH_ASSOC);
+    });
+
+    $capsule->addConnection($config);
+    $capsule->setEventDispatcher($dispatcher);
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+    return Capsule::schema();
+}
+
+function makePDO(array $config, $options = [])
+{
+    $ops = [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ];
+    foreach ($options as $key => $value) {
+        $ops[$key] = $value;
+    }
+    $dsn = sprintf('%s:host=%s;dbname=%s', $config['driver'], $config['host'], $config['database']);
+    return new PDO($dsn, $config['username'], $config['password'], $options);
 }
