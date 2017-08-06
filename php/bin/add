@@ -21,10 +21,10 @@ commit($newPath, "add $newPath");
 
 function addDateAndTitle(string $filePath, array $titleWords) : string
 {
-    $ext = is_dir($filePath) ? '' : pathinfo($filePath, PATHINFO_EXTENSION);
+    $ext = is_dir($filePath) ? '' : '.'.pathinfo($filePath, PATHINFO_EXTENSION);
     $title = implode('_', $titleWords);
 
-    return dirname($filePath) . '/' . date('Y-m-d') . '_' . $title . ".$ext";
+    return dirname($filePath) . '/' . date('Y-m-d') . '_' . $title . "$ext";
 }
 
 function commit(string $filePath, string $message)
