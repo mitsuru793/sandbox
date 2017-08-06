@@ -215,3 +215,9 @@ formのinputで`users[0][name]`ではなく`name[]`としか書けない場合�
 ### テーブルの各行のカラム値を配列で送信(form)する。
 2017-08-04 [source](./2017-08-04_submit_column_value_each_table_row_with_form.php)  
 配列で取得できるとModelを通じて登録するのが便利。
+
+### Valueオブジェクトの抽象クラスを作る
+2017-08-06 [source](./2017-08-06_make_abstruct_value_class.php)  
+同じstringでも、Text, Nameとラップして型を示す事が可能。
+メソッドを持たせることも出来る。
+Value::of($value)としか生成させないようにして、見分けをつける。
