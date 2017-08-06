@@ -22,6 +22,7 @@ source(./b.php)
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Lib\File\Posts;
+use Lib\File\EntryPointPaths;
 
 function main(array $argv)
 {
@@ -29,14 +30,18 @@ function main(array $argv)
         throw new ArgumentCountError('Arguments must be more than 1');
     }
 
-    $filePaths = array_slice($argv, 1);
-    $posts = Posts::fromFiles($filePaths);
+    $paths = array_slice($argv, 1);
+    $paths = EntryPointPaths::fromPaths($paths)
+      ->map(function ($path) { return $path->value(); })
+      ->filter()
+      ->all();
+    $posts = Posts::fromFiles($paths);
 
     $content = $posts->reduce(function ($content, $post) {
         $content = implode(PHP_EOL, [
             $content,
             "### {$post->title}",
-            $post->date . ' [source](./' . basename($post->path) . ')  ',
+            "{$post->date} [source](./{$post->path})",
         ]);
         if (!empty($post->body)) {
             $content .= PHP_EOL . trim($post->body);
