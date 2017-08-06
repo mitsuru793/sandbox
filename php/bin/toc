@@ -21,7 +21,7 @@ source(./b.php)
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Illuminate\Support\Collection;
+use Lib\File\Posts;
 
 function main(array $argv)
 {
@@ -45,110 +45,6 @@ function main(array $argv)
     });
     echo '# コードリスト' . PHP_EOL . PHP_EOL;
     echo trim($content);
-}
-
-class Posts extends Collection
-{
-    public function __construct($posts)
-    {
-        parent::__construct($posts);
-    }
-
-    public static function fromFiles(array $paths) : self
-    {
-        $posts = array_map(function($path) { return new Post($path); }, $paths);
-        return new static($posts);
-    }
-}
-
-class Post
-{
-    public $path;
-    public $title;
-    public $date;
-    public $lines;
-    public $body;
-
-    public function __construct(string $path)
-    {
-        $this->path = $path;
-        $post = $this->parseFile($this->path);
-        $this->title = $post['title'];
-        $this->date = $post['date'];
-        $this->lines = $post['lines'];
-        $this->body = $this->lines->implode('value', PHP_EOL);
-    }
-
-    private function parseFile($filePath) : array
-    {
-        $lines = Lines::fromFile($filePath)->frontMatter();
-        preg_match('/^\d{4}-\d{2}-\d{2}/', $filePath, $matches);
-        return [
-            'title' => $lines->get(0)->value,
-            'date' =>$matches[0],
-            'lines' => $lines->slice(1)->values(),
-        ];
-    }
-}
-
-class Lines extends Collection
-{
-    public function __construct(array $lines)
-    {
-        parent::__construct($lines);
-    }
-
-    public static function fromFile(string $filePath) : self
-    {
-        $lines = explode(PHP_EOL, file_get_contents($filePath));
-        $lines = array_map(function ($line) { return new Line($line); }, $lines);
-        return new static($lines);
-    }
-
-    /**
-     * 先頭のコメントブロックの中身を抽出
-     */
-    public function frontMatter() : self
-    {
-        $lines = [];
-        $inComment = false;
-        $this->each(function ($line) use (&$lines, &$inComment) {
-            if ($line->isCommentStart()) {
-                $inComment = true;
-                return;
-            }
-            if ($line->isCommentEnd()) {
-                return false;
-            }
-            if ($inComment) {
-                $lines[] = $line;
-            }
-        });
-        return new static($lines);
-    }
-}
-
-/**
- * PHPの複数行の開始と終わりを判断できる。
- */
-class Line
-{
-    public $value;
-
-    public function __construct(string $value)
-    {
-        $this->value = $value;
-    }
-
-    public function isCommentStart() : bool
-    {
-        return preg_match('~/\*~', $this->value);
-    }
-
-    public function isCommentEnd() : bool
-    {
-        return preg_match('~\*/~', $this->value);
-    }
 }
 
 main($argv);
