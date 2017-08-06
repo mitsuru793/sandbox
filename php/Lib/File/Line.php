@@ -15,12 +15,12 @@ class Line
 
     public function isCommentStart() : bool
     {
-        return preg_match('~/\*~', $this->value);
+        return preg_match('~(/\*|<!--)~', $this->value);
     }
 
     public function isCommentEnd() : bool
     {
-        return preg_match('~\*/~', $this->value);
+        return preg_match('~(\*/|-->)~', $this->value);
     }
 }
 
