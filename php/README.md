@@ -216,6 +216,9 @@ formのinputで`users[0][name]`ではなく`name[]`としか書けない場合�
 2017-08-04 [source](./2017-08-04_submit_column_value_each_table_row_with_form.php)  
 配列で取得できるとModelを通じて登録するのが便利。
 
+### pathがファイル・ディレクトリによってエントリーポイントを判断するクラスを作る。
+2017-08-06 [source](./2017-08-06_make_a_class_that_detect_entry_point_from_either_file_or_directory.php)  
+
 ### Valueオブジェクトの抽象クラスを作る
 2017-08-06 [source](./2017-08-06_make_abstruct_value_class.php)  
 同じstringでも、Text, Nameとラップして型を示す事が可能。
