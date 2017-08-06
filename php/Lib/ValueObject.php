@@ -11,7 +11,7 @@ namespace Lib;
  * ※ constructは子クラスでprotectedにする必要がある。強制はできない。
  *   (constructでタイプヒントを扱えるようにするため。)
  */
-abstract class Value implements \JsonSerializable
+abstract class ValueObject implements \JsonSerializable
 {
     protected $value;
 
@@ -31,6 +31,11 @@ abstract class Value implements \JsonSerializable
     }
 
     public function jsonSerialize()
+    {
+        return $this->value;
+    }
+
+    public function value()
     {
         return $this->value;
     }

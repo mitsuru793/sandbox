@@ -4,7 +4,7 @@ Valueオブジェクトの抽象クラスを作る
 
 同じstringでも、Text, Nameとラップして型を示す事が可能。
 メソッドを持たせることも出来る。
-Value::of($value)としか生成させないようにして、見分けをつける。
+ValueObject::of($value)としか生成させないようにして、見分けをつける。
 */
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -19,6 +19,7 @@ function run()
     }
     assert(Name::of('Mike') instanceof Name);
     assert((string)Name::of('Mike') === 'Mike');
+    assert(Name::of('Mike')->value() === 'Mike');
 }
 
 /**
@@ -31,7 +32,7 @@ function run()
  * ※ constructは子クラスでprotectedにする必要がある。強制はできない。
  *   (constructでタイプヒントを扱えるようにするため。)
  */
-abstract class Value implements \JsonSerializable
+abstract class ValueObject implements \JsonSerializable
 {
     protected $value;
 
@@ -54,9 +55,14 @@ abstract class Value implements \JsonSerializable
     {
         return $this->value;
     }
+
+    public function value()
+    {
+        return $this->value;
+    }
 }
 
-class Name extends Value
+class Name extends ValueObject
 {
     protected function __construct(string $name)
     {

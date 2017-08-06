@@ -1,12 +1,12 @@
 <?php
 namespace Lib\File;
 
-use Lib\Value;
+use Lib\ValueObject;
 
 /**
  * pathがファイルなら自身を、ディレクトリなら中身の対象ファイルをエントリーポイントとして扱う。
  */
-class EntryPointPath extends Value
+class EntryPointPath extends ValueObject
 {
     // 先頭の要素を優先して採用。
     public $entryFiles = [
