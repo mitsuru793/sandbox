@@ -1,0 +1,22 @@
+<!--
+formでsubmitする前にjqueryでsrializeArrayしてバリデートする
+
+srializeArrayを連想配列に変換してからバリデート
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <form id="user-form" action="/" method="post">
+    <ul>
+      <li><input id="user-name" type="text" name="name"></li>
+      <li><input id="user-age" type="number" name="age"></li>
+      <li><input type="submit" value="submit"></li>
+    </ul>
+  </form>
+<script src="bundle.js"></script>
+</body>
+</html>
