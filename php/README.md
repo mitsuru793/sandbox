@@ -227,3 +227,7 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 
 ### __setは内部メソッドの中でも適用される。
 2017-08-07 [source](./2017-08-07___set_applies_inside_method.php)
+
+### laravelのCollection->keyByでidで要素を取得できるようにする。
+2017-08-08 [source](./2017-08-08_get_element_by_id_with_collection_keyby_method_of_laravel.php)
+検索値は連想配列のkeyにすると速い。
