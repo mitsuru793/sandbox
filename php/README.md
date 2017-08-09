@@ -234,3 +234,6 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 
 ### クラスプロパティconstは、子クラスで上書きできる。
 2017-08-09 [source](./2017-08-09_class_property_const_can_be_overriden.php)
+
+### インスタンスメソッドと同名をクラスメソッドとして呼び出すと、__callStaticを定義してもDeprecatedになる。
+2017-08-09 [source](./2017-08-09_instance_method_is_deprecated_to_call_as_static_even_if_define_callStatic.php)
