@@ -231,3 +231,6 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 ### laravelのCollection->keyByでidで要素を取得できるようにする。
 2017-08-08 [source](./2017-08-08_get_element_by_id_with_collection_keyby_method_of_laravel.php)
 検索値は連想配列のkeyにすると速い。
+
+### クラスプロパティconstは、子クラスで上書きできる。
+2017-08-09 [source](./2017-08-09_class_property_const_can_be_overriden.php)
