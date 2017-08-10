@@ -238,7 +238,7 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 ### インスタンスメソッドと同名をクラスメソッドとして呼び出すと、__callStaticを定義してもDeprecatedになる。
 2017-08-09 [source](./2017-08-09_instance_method_is_deprecated_to_call_as_static_even_if_define_callStatic.php)
 
-### LSTVのアクエスログから、BOT以外のリクエストパスとユーザーエージェントのペアを取り出す。
+### LSTVのアクセスログから、BOT以外のリクエストパスとユーザーエージェントのペアを取り出す。
 2017-08-09 [source](./2017-08-09_take_pair_of_request_path_and_user_agent_except_bot_from_ltsv_of_acceess_log.php)
 
 ### セッションファイルにシリアライズされたデータを確認する
@@ -246,6 +246,11 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 
 ### 許容されたオプションのみをセットする場合は、array_flipを使うと速い。
 2017-08-10 [source](./2017-08-10_its_firster_to_set_only_valid_option_when_use_array_flip.php)
+
+### 公開するプロパティと非公開のメタデータを、どちらもprotectedプロパティで管理する。
+2017-08-10 [source](./2017-08-10_manage_both_published_property_and_not_one_with_protected_property.php)
+`__set`を通して、publicプロパティとしてアクセスしてもセッターを呼び出すことが出来る。
+jsonで書き出す時は$dataのみを対象とすれば良いので楽。
 
 ### laravelのcollectにはarrayだけでなく、Collectionを混ぜても良い。
 2017-08-10 [source](./2017-08-10_mix_Collection_and_array_in_collect_of_laravel.php)
