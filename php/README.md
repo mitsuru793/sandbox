@@ -204,7 +204,7 @@ inputのname属性には`user[0][name]`とは書けないため、`name[]`と書
 レコードのカラム値以外の値が混ざると対応できない。
 
 ### カラムごとにレコードの要素がある配列を、1レコード1要素に変換する。
-2017-08-04 [source](./2017-08-04_comvert_array_has_record_value_each_column_to_1_record_each_1_element.php)
+2017-08-04 [source](./2017-08-04_convert_array_has_record_value_each_column_to_1_record_each_1_element.php)
 formのinputで`users[0][name]`ではなく`name[]`としか書けない場合を想定
 
 ```
@@ -240,3 +240,6 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 
 ### LSTVのアクエスログから、BOT以外のリクエストパスとユーザーエージェントのペアを取り出す。
 2017-08-09 [source](./2017-08-09_take_pair_of_request_path_and_user_agent_except_bot_from_ltsv_of_acceess_log.php)
+
+### laravelのcollectにはarrayだけでなく、Collectionを混ぜも良い。
+2017-08-10 [source](./2017-08-10_mix_Collection_and_array_in_collect_of_laravel.php)
