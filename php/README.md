@@ -244,5 +244,8 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 ### セッションファイルにシリアライズされたデータを確認する
 2017-08-10 [source](./2017-08-10_confirm_data_serialized_into_session_file.php)
 
+### 許容されたオプションのみをセットする場合は、array_flipを使うと速い。
+2017-08-10 [source](./2017-08-10_its_firster_to_set_only_valid_option_when_use_array_flip.php)
+
 ### laravelのcollectにはarrayだけでなく、Collectionを混ぜても良い。
 2017-08-10 [source](./2017-08-10_mix_Collection_and_array_in_collect_of_laravel.php)
