@@ -241,5 +241,8 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 ### LSTVのアクエスログから、BOT以外のリクエストパスとユーザーエージェントのペアを取り出す。
 2017-08-09 [source](./2017-08-09_take_pair_of_request_path_and_user_agent_except_bot_from_ltsv_of_acceess_log.php)
 
-### laravelのcollectにはarrayだけでなく、Collectionを混ぜも良い。
+### セッションファイルにシリアライズされたデータを確認する
+2017-08-10 [source](./2017-08-10_confirm_data_serialized_into_session_file.php)
+
+### laravelのcollectにはarrayだけでなく、Collectionを混ぜても良い。
 2017-08-10 [source](./2017-08-10_mix_Collection_and_array_in_collect_of_laravel.php)
