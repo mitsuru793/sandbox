@@ -247,6 +247,9 @@ ValueObject::of($value)としか生成させないようにして、見分けを
 ### 許容されたオプションのみをセットする場合は、array_flipを使うと速い。
 2017-08-10 [source](./2017-08-10_its_firster_to_set_only_valid_option_when_use_array_flip.php)
 
+### オブジェクトのプロパティの更新に間隔を設けて制限する
+2017-08-10 [source](./2017-08-10_limit_interval_to_update_property_of_object.php)
+
 ### 公開するプロパティと非公開のメタデータを、どちらもprotectedプロパティで管理する。
 2017-08-10 [source](./2017-08-10_manage_both_published_property_and_not_one_with_protected_property.php)
 `__set`を通して、publicプロパティとしてアクセスしてもセッターを呼び出すことが出来る。
