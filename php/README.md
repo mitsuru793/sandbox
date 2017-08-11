@@ -257,3 +257,8 @@ jsonで書き出す時は$dataのみを対象とすれば良いので楽。
 
 ### laravelのcollectにはarrayだけでなく、Collectionを混ぜても良い。
 2017-08-10 [source](./2017-08-10_mix_Collection_and_array_in_collect_of_laravel.php)
+
+### SymfonyのSessionクラスを使ってみる。
+2017-08-11 [source](./2017-08-11_use_session_class_of_symfony.php)
+実装を見たところ、`$_SESSION`のラッパークラスという感じ。
+Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理している。
