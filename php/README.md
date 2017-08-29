@@ -265,3 +265,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### 配列のkeyをリネームする
 2017-08-29 [source](./2017-08-29_rename_key_of_array.php)
+
+### 末尾に/が無いと、parse_urlの結果にpathも無くなる。
+2017-08-29 [source](./2017-08-29_result_of_parse_url_has_no_path_if_url_has_no_slash_at_the_end.php)
