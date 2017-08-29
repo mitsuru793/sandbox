@@ -262,3 +262,6 @@ jsonで書き出す時は$dataのみを対象とすれば良いので楽。
 2017-08-11 [source](./2017-08-11_use_session_class_of_symfony.php)
 実装を見たところ、`$_SESSION`のラッパークラスという感じ。
 Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理している。
+
+### 配列のkeyをリネームする
+2017-08-29 [source](./2017-08-29_rename_key_of_array.php)
