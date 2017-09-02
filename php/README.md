@@ -274,3 +274,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### get_class_methodsはインスタンスとクラスメソッドの両方を返す。
 2017-09-02 [source](./2017-09-02_get_class_methods_returns_both_instance_and_class_methods.php)
+
+### ErrorとExceptinのメソッドは同じ
+2017-09-02 [source](./2017-09-02_methods_of_error_and_exception_are_same.php)
