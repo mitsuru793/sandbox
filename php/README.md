@@ -271,3 +271,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### 末尾に/が無いと、parse_urlの結果にpathも無くなる。
 2017-08-29 [source](./2017-08-29_result_of_parse_url_has_no_path_if_url_has_no_slash_at_the_end.php)
+
+### get_class_methodsはインスタンスとクラスメソッドの両方を返す。
+2017-09-02 [source](./2017-09-02_get_class_methods_returns_both_instance_and_class_methods.php)
