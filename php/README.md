@@ -281,3 +281,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### ErrorとExceptinのメソッドは同じ
 2017-09-02 [source](./2017-09-02_methods_of_error_and_exception_are_same.php)
+
+### tightenco/collectのArr::collapseを読む
+2017-09-02 [source](./2017-09-02_read_code_of_collapse_method_of_Arr_of_tightenco_collect.php)
