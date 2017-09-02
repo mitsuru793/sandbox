@@ -284,3 +284,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### tightenco/collectのArr::collapseを読む
 2017-09-02 [source](./2017-09-02_read_code_of_collapse_method_of_Arr_of_tightenco_collect.php)
+
+### dot記法を実現するヘルパー関数data_getを読む
+2017-09-02 [source](./2017-09-02_read_code_of_data_get.php)
