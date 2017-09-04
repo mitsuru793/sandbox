@@ -287,3 +287,6 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### dot記法を実現するヘルパー関数data_getを読む
 2017-09-02 [source](./2017-09-02_read_code_of_data_get.php)
+
+### 関数内ではglobal変数は再定義しないとundefinedになる。
+2017-09-04 [source](./2017-09-04_global_variable_will_be_undefined_when_not_defined_again_inside_function.php)
