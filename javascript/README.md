@@ -25,3 +25,6 @@
 ### formでsubmitする前にjqueryでsrializeArrayしてバリデートする
 2017-08-06 [source](./2017-08-06_sealizeArray_of_jquery_form_to_validate_it_before_submit/index.html)
 srializeArrayを連想配列に変換してからバリデート
+
+### ランダムの時間、待機する。
+2017-09-06 [source](./2017-09-06_wait_random_time.js)
