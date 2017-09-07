@@ -29,5 +29,8 @@ srializeArrayを連想配列に変換してからバリデート
 ### ランダムの時間、待機する。
 2017-09-06 [source](./2017-09-06_wait_random_time.js)
 
+### 非同期とawaitを使った同期処理
+2017-09-07 [source](./2017-09-07_no_async_and_async_with_await.js)
+
 ### awaitの戻り値はresolve, rejectに渡した引数。
 2017-09-07 [source](./2017-09-07_return_of_await_is_argument_passing_to_resolve_and_reject.js)
