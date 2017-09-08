@@ -34,3 +34,7 @@ srializeArrayを連想配列に変換してからバリデート
 
 ### awaitの戻り値はresolve, rejectに渡した引数。
 2017-09-07 [source](./2017-09-07_return_of_await_is_argument_passing_to_resolve_and_reject.js)
+
+### generatorとyieldで値を送信する
+2017-09-08 [source](./2017-09-08_send_value_with_generator_and_yield.js)
+yieldに渡した値は外側に、generatorFunc.next()に渡すと内側に値が届く。
