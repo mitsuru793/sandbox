@@ -290,3 +290,10 @@ Flush(FlushBag)とそれ以外(AttributeBag)は別々のクラス管理してい
 
 ### 関数内ではglobal変数は再定義しないとundefinedになる。
 2017-09-04 [source](./2017-09-04_global_variable_will_be_undefined_when_not_defined_again_inside_function.php)
+
+### mixedな値をラップして、1つの型に変換すると使いやすくなる。
+2017-09-09 [source](./2017-09-09_easy_to_use_mixed_value_by_wrapping_and_cast.php)
+StringyやCollectionを参考
+mixedの値をコンストラクタで1つの型に変換すると使いやすくなる。
+例外も自分で用意すれば、動的言語の良さを活かすことができる。
+戻り値は固定した方がよいと思う。タイプヒントをつけよう。
