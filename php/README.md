@@ -298,6 +298,11 @@ mixedの値をコンストラクタで1つの型に変換すると使いやす�
 例外も自分で用意すれば、動的言語の良さを活かすことができる。
 戻り値は固定した方がよいと思う。タイプヒントをつけよう。
 
+### interfaceにマジックメソッドも定義できるため、Commandパターンでexecuteの代わりにinvokeが使える。
+2017-09-10 [source](./2017-09-10_can_use_invoke_method_instead_of_execute_in_command_pattern.php)
+分かりづらい気もするので、メソッド名はexecuteの方がいいかも。
+インターフェースで統一は出来ているので。
+
 ### Bridgeパターンで機能と実装を分けてクラスを実装する
 2017-09-10 [source](./2017-09-10_implement_class_dividing_function_and_implementation.php)
 [PHPによるデザインパターン入門 \- Bridge～実装と機能の架け橋 \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141216/1418705115)
