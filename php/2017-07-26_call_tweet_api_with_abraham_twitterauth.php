@@ -12,10 +12,10 @@ $dotenv->load();
 
 //接続
 $connection = new TwitterOAuth(
-    getenv('CONSUMER_KEY'),
-    getenv('CONSUMER_SECRET'),
-    getenv('ACCESS_TOKEN'),
-    getenv('ACCESS_TOKEN_SECRET')
+    getenv('TWITTER_CONSUMER_KEY'),
+    getenv('TWITTER_CONSUMER_SECRET'),
+    getenv('TWITTER_ACCESS_TOKEN'),
+    getenv('TWITTER_ACCESS_TOKEN_SECRET')
 );
 
 // dumpを確認したい$resの下に移動すればいい
