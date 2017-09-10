@@ -298,6 +298,9 @@ mixedの値をコンストラクタで1つの型に変換すると使いやす�
 例外も自分で用意すれば、動的言語の良さを活かすことができる。
 戻り値は固定した方がよいと思う。タイプヒントをつけよう。
 
+### apai-ioでamaozonのapiを叩く
+2017-09-10 [source](./2017-09-10_call_amazon-api_with_apai-io.php)
+
 ### interfaceにマジックメソッドも定義できるため、Commandパターンでexecuteの代わりにinvokeが使える。
 2017-09-10 [source](./2017-09-10_can_use_invoke_method_instead_of_execute_in_command_pattern.php)
 分かりづらい気もするので、メソッド名はexecuteの方がいいかも。
