@@ -319,6 +319,9 @@ mixedの値をコンストラクタで1つの型に変換すると使いやす�
 既に実用していてバグがないことをが保証されているクラスのソースコードに一切手を加えずに、APIを変更できる。
 委譲ではなく継承だと、古いAPIを隠すことができない。
 
+### apai-ioのbuilderクラスを作る
+2017-09-10 [source](./2017-09-10_make_apai-io_builder.php)
+
 ### 記事の承認ステータスをStateパターンで表現する。
 2017-09-10 [source](./2017-09-10_represent_approve_state_of_article_with_state_pattern.php)
 [PHPによるデザインパターン入門 \- State～状態を表す \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141219/1418965549)
