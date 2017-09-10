@@ -298,6 +298,12 @@ mixedの値をコンストラクタで1つの型に変換すると使いやす�
 例外も自分で用意すれば、動的言語の良さを活かすことができる。
 戻り値は固定した方がよいと思う。タイプヒントをつけよう。
 
+### Bridgeパターンで機能と実装を分けてクラスを実装する
+2017-09-10 [source](./2017-09-10_implement_class_dividing_function_and_implementation.php)
+[PHPによるデザインパターン入門 \- Bridge～実装と機能の架け橋 \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141216/1418705115)
+
+機能クラスはファサードに近い感じがする。実装は別クラスに委譲しており、実装の最上位はインターフェースを使うとテンプレートメソッドになる。
+
 ### 委譲を使ったアダプタークラスを作る
 2017-09-10 [source](./2017-09-10_make_adapter_class_transfering.php)
 [PHPによるデザインパターン入門 \- Adapter～APIを変更する \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141212/1418364494)
