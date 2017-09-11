@@ -327,3 +327,10 @@ mixedの値をコンストラクタで1つの型に変換すると使いやす�
 [PHPによるデザインパターン入門 \- State～状態を表す \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141219/1418965549)
 
 nextStateは一方向でしか使えない。状態が分岐する場合には使えない。
+
+### AmazonのURLから商品IDを取得する。
+2017-09-11 [source](./2017-09-11_get_product_id_from_amazon_url.php)
+APIでURLからIDは取得できない。正規表現で解析するしかない。
+
++ [php \- Get ASIN from pasted Amazon url \- Stack Overflow](https://stackoverflow.com/questions/21700573/get-asin-from-pasted-amazon-url)
++ [Amazonの商品ページURLフォーマットに関するメモ \- Qiita](http://qiita.com/Feburic/items/6e918b1a9345367622c9)
