@@ -334,3 +334,7 @@ APIでURLからIDは取得できない。正規表現で解析するしかない
 
 + [php \- Get ASIN from pasted Amazon url \- Stack Overflow](https://stackoverflow.com/questions/21700573/get-asin-from-pasted-amazon-url)
 + [Amazonの商品ページURLフォーマットに関するメモ \- Qiita](http://qiita.com/Feburic/items/6e918b1a9345367622c9)
+
+### json_encodeで__toStringは呼ばれない
+2017-09-13 [source](./2017-09-13_not_call_toString_in_json_encode.php)
+新しく中身をstringにキャストしながら、配列を作り直すかJsonSerializableを実装しておく。
