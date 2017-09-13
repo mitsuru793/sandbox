@@ -338,3 +338,7 @@ APIでURLからIDは取得できない。正規表現で解析するしかない
 ### json_encodeで__toStringは呼ばれない
 2017-09-13 [source](./2017-09-13_not_call_toString_in_json_encode.php)
 新しく中身をstringにキャストしながら、配列を作り直すかJsonSerializableを実装しておく。
+
+### laravelのCollectionは、配列のkey名を維持する。
+2017-09-13 [source](./2017-09-13_tightenco_collect_maintains_key_name_of_array.php)
+keyに数字が使われている場合は、数値に変わる。
