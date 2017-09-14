@@ -350,3 +350,8 @@ keyに数字が使われている場合は、数値に変わる。
 ### interfaceの実装先で、戻り値のタイプヒントを変更したい。
 2017-09-14 [source](./2017-09-14_modify_typehint_of_returned_value_in_interface_implementation.php)
 同じシグネチャのloginメソッドでUserとAdminのどちらかを返す。
+
+### 同じクラス変数名を子クラスで再定義しないと、親と他の子クラス全体で共有される。
+2017-09-14 [source](./2017-09-14_share_class_property_with_parent_and_other_child_class_if_you_do_not_redefine_same_class_value_name_in_child.php)
+親が抽象クラスで親とクラス変数を共有しない場合は、親に定義しない方が良いと思う。
+親では定義をコメントアウトして、子クラスで定義するようにコメントしておくと良い。
