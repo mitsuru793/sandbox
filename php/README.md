@@ -361,3 +361,6 @@ keyに数字が使われている場合は、数値に変わる。
 2017-09-14 [source](./2017-09-14_share_class_property_with_parent_and_other_child_class_if_you_do_not_redefine_same_class_value_name_in_child.php)
 親が抽象クラスで親とクラス変数を共有しない場合は、親に定義しない方が良いと思う。
 親では定義をコメントアウトして、子クラスで定義するようにコメントしておくと良い。
+
+### selfは自分自身に置き換わるので、継承先ではタイプヒントにparentで同値になる。
+2017-09-14 [source](./2017-09-14_typehint_self_will_be_replaced_self_class_name_and_must_use_typehint_parent_in_child.php)
