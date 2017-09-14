@@ -342,3 +342,7 @@ APIでURLからIDは取得できない。正規表現で解析するしかない
 ### laravelのCollectionは、配列のkey名を維持する。
 2017-09-13 [source](./2017-09-13_tightenco_collect_maintains_key_name_of_array.php)
 keyに数字が使われている場合は、数値に変わる。
+
+### interfaceの実装先で、戻り値のタイプヒントを変更したい。
+2017-09-14 [source](./2017-09-14_modify_typehint_of_returned_value_in_interface_implementation.php)
+同じシグネチャのloginメソッドでUserとAdminのどちらかを返す。
