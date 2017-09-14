@@ -347,6 +347,9 @@ keyに数字が使われている場合は、数値に変わる。
 2017-09-14 [source](./2017-09-14_if_add_argument_to_only_override_method_you_must_add_default_value.php)
 引数を省略出来るということは、親メソッドのシグネチャで呼び出すことが可能ということ。
 
+### 生成するクラス名を注入して、生成処理だけをメソッド化する。
+2017-09-14 [source](./2017-09-14_inject_generated_class_ame_and_make_method_for_generating_it.php)
+
 ### interfaceの実装先で、戻り値のタイプヒントを変更したい。
 2017-09-14 [source](./2017-09-14_modify_typehint_of_returned_value_in_interface_implementation.php)
 同じシグネチャのloginメソッドでUserとAdminのどちらかを返す。
