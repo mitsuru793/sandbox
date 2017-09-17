@@ -364,3 +364,8 @@ keyに数字が使われている場合は、数値に変わる。
 
 ### selfは自分自身に置き換わるので、継承先ではタイプヒントにparentで同値になる。
 2017-09-14 [source](./2017-09-14_typehint_self_will_be_replaced_self_class_name_and_must_use_typehint_parent_in_child.php)
+
+### amazonの商品データを自作モデルで簡単に取得できるように、apai-ioのラッパークラスを作る。
+2017-09-17 [source](./2017-09-17_make_wrapper_for_apai-io_to_get_amazon_products_as_my_model.php)
+取得結果はSimpleXMLElementで複雑な構造のため、モデルクラスに入れる。
+title, image, descriptionのみを持つ。
