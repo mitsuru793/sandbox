@@ -370,6 +370,10 @@ keyに数字が使われている場合は、数値に変わる。
 取得結果はSimpleXMLElementで複雑な構造のため、モデルクラスに入れる。
 title, image, descriptionのみを持つ。
 
+### ファイル名を判断して出力する処理を、Factoryパターンで抽出する。
+2017-09-18 [source](./2017-09-18_extract_proccessing_with_factory_pattern_to_judge_from_filename.php)
+[PHPによるデザインパターン入門 \- Factory Method～生成処理と使用処理を分離する \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141215/1418620242)
+
 ### 1クラス1バリデーションに分けて処理を繋げるChain of Responsibility
 2017-09-18 [source](./2017-09-18_separate_it_into_1_class_and_1_validation_and_join_with_chain_of_responsibility_pattern.php)
 [PHPによるデザインパターン入門 \- Chain of Responsibility～処理のたらい回し \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141216/1418705161)
