@@ -369,3 +369,15 @@ keyに数字が使われている場合は、数値に変わる。
 2017-09-17 [source](./2017-09-17_make_wrapper_for_apai-io_to_get_amazon_products_as_my_model.php)
 取得結果はSimpleXMLElementで複雑な構造のため、モデルクラスに入れる。
 title, image, descriptionのみを持つ。
+
+### 1クラス1バリデーションに分けて処理を繋げるChain of Responsibility
+2017-09-18 [source](./2017-09-18_separate_it_into_1_class_and_1_validation_and_join_with_chain_of_responsibility_pattern.php)
+[PHPによるデザインパターン入門 \- Chain of Responsibility～処理のたらい回し \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141216/1418705161)
+
+外側に分かりやすいAPI validate(メソッド名)を提供しているので、コンクリートクラスで実際に実装するメソッド名はexecValidationにしている。
+publicなAPIの方を優先して分かりやすくする。
+
+> Chain of Responsibilityパターンの特徴は、処理オブジェクトのチェーンです。つまり、Handler型のオブジェクトのチェーンです。
+> チェーンの組み替えや、新しいConcreteHandlerクラスを追加したりできる
+
+直接メインロジックにifの分岐を書かず、代わりにConcreteHandlerを追加する。これにより判定条件を使いまわすことができる。
