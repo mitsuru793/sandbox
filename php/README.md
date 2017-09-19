@@ -385,3 +385,10 @@ publicなAPIの方を優先して分かりやすくする。
 > チェーンの組み替えや、新しいConcreteHandlerクラスを追加したりできる
 
 直接メインロジックにifの分岐を書かず、代わりにConcreteHandlerを追加する。これにより判定条件を使いまわすことができる。
+
+### Abstract FactoryでDaoをモックする。
+2017-09-19 [source](./2017-09-19_mock_dao_with_abstract_factory_pattern.php)
+[PHPによるデザインパターン入門 \- Abstract Factory～関連する部品をまとめて作る工場 \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141215/1418620420)
+
+生成するものについての実装もする必要はなく、共通のAPIを使って開発ができる。
+interfaceだけを意識して開発するをFactoryといった感じ。
