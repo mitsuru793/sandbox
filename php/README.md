@@ -386,6 +386,9 @@ publicなAPIの方を優先して分かりやすくする。
 
 直接メインロジックにifの分岐を書かず、代わりにConcreteHandlerを追加する。これにより判定条件を使いまわすことができる。
 
+### VCRでtwitterクライアントで呼び出したAPIの通信内容をキャッシュする。
+2017-09-19 [source](./2017-09-19_cache_communication_content_of_api_called_by_twitter_client_with_vcr.php)
+
 ### Abstract FactoryでDaoをモックする。
 2017-09-19 [source](./2017-09-19_mock_dao_with_abstract_factory_pattern.php)
 [PHPによるデザインパターン入門 \- Abstract Factory～関連する部品をまとめて作る工場 \- Do You PHP はてな](http://d.hatena.ne.jp/shimooka/20141215/1418620420)
