@@ -399,3 +399,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### VCRを使い、HTTPリクエストとレスポンスをファイルキャッシュして、外部APIをテストする。
 2017-09-19 [source](./2017-09-19_test_external_api_file_catching_http_request_and_response_with_vcr.php)
 [php\-vcr/php\-vcr: Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests\.](https://github.com/php-vcr/php-vcr)
+
+### 配列からの多重代入は、プロパティも指定できる。
+2017-09-20 [source](./2017-09-20_multiple_assignment_from_array_can_be_used_into_also_property.php)
