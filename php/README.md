@@ -402,3 +402,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### 配列からの多重代入は、プロパティも指定できる。
 2017-09-20 [source](./2017-09-20_multiple_assignment_from_array_can_be_used_into_also_property.php)
+
+### 定数とクラス変数は文字列の中で展開できない。
+2017-09-24 [source](./2017-09-24_can_not_expand_const_and_class_value_in_string.php)
