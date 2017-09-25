@@ -405,3 +405,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### 定数とクラス変数は文字列の中で展開できない。
 2017-09-24 [source](./2017-09-24_can_not_expand_const_and_class_value_in_string.php)
+
+### json_encodeにインスタンスを渡すとpublicプロパティが使用される。
+2017-09-25 [source](./2017-09-25_json_encode_uses_public_property_when_give_an_instance.php)
