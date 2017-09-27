@@ -408,3 +408,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### json_encodeにインスタンスを渡すとpublicプロパティが使用される。
 2017-09-25 [source](./2017-09-25_json_encode_uses_public_property_when_give_an_instance.php)
+
+### タイプヒントの子クラスを引数として渡すことは可能
+2017-09-27 [source](./2017-09-27_can_pass_a_child_class_of_typehint_as_argument.php)
