@@ -411,3 +411,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### タイプヒントの子クラスを引数として渡すことは可能
 2017-09-27 [source](./2017-09-27_can_pass_a_child_class_of_typehint_as_argument.php)
+
+### タイプヒントにstdClassが使える
+2017-09-27 [source](./2017-09-27_stdclass_can_be_used_as_typehint.php)
