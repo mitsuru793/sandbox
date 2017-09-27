@@ -19,7 +19,7 @@
 ### stdClassも自作クラスもis_objectの判定はtrueである。
 2017-07-13 [source](./2017-07-13_std_and_my_class_are_object.php)
 
-### タイプヒントに使われている型の子クラスは許容できない。インターフェースを使う。
+### タイプヒントを子クラスで上書きすることはできない
 2017-07-13 [source](./2017-07-13_use_interface_instead_of_child_class.php)
 
 ### null合体演算子は未定義なプロパティに使える。
