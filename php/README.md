@@ -415,5 +415,8 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### タイプヒントにstdClassが使える
 2017-09-27 [source](./2017-09-27_stdclass_can_be_used_as_typehint.php)
 
+### 外側だけでなく、メソッド内で自身の存在しないプロパティにアクセスした時にも__getは呼び出される。
+2017-10-01 [source](./2017-10-01_call_magic_method_get_when_access_property_does_not_exist_in_own_method.php)
+
 ### 同じプロパティ名とメソッド名を定義できるので、使い分けができる。
 2017-10-01 [source](./2017-10-01_define_same_name_in_property_and_method.php)
