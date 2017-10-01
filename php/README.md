@@ -418,5 +418,8 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### 外側だけでなく、メソッド内で自身の存在しないプロパティにアクセスした時にも__getは呼び出される。
 2017-10-01 [source](./2017-10-01_call_magic_method_get_when_access_property_does_not_exist_in_own_method.php)
 
+### array_key_existsを$thisに使う前に、get_object_varsを使ってプロパティの有無を確認する。
+2017-10-01 [source](./2017-10-01_confirm_if_property_exists_with_array_key_exists_and_get_object_vars.php)
+
 ### 同じプロパティ名とメソッド名を定義できるので、使い分けができる。
 2017-10-01 [source](./2017-10-01_define_same_name_in_property_and_method.php)
