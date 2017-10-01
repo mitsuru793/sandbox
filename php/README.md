@@ -414,3 +414,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### タイプヒントにstdClassが使える
 2017-09-27 [source](./2017-09-27_stdclass_can_be_used_as_typehint.php)
+
+### 同じプロパティ名とメソッド名を定義できるので、使い分けができる。
+2017-10-01 [source](./2017-10-01_define_same_name_in_property_and_method.php)
