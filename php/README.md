@@ -423,3 +423,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### 同じプロパティ名とメソッド名を定義できるので、使い分けができる。
 2017-10-01 [source](./2017-10-01_define_same_name_in_property_and_method.php)
+
+### 親クラスのプロパティのみを取得したい時はget_class_varsを使う
+2017-10-07 [source](./2017-10-07_get_only_parent_properties_with_get_class_vars.php)
