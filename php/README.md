@@ -426,3 +426,7 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### 親クラスのプロパティのみを取得したい時はget_class_varsを使う
 2017-10-07 [source](./2017-10-07_get_only_parent_properties_with_get_class_vars.php)
+
+### get_object_varsの戻り値で、値がオブジェクトのプロパティの中身を変えると、元のオブジェクトまで変わる。
+2017-10-07 [source](./2017-10-07_modify_property_value_of_object_returned_by_get_object_vars_and_then_original_object_is_changed.php)
+オブジェクトの場合は参照が渡っているため。
