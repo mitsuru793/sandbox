@@ -430,3 +430,6 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### get_object_varsの戻り値で、値がオブジェクトのプロパティの中身を変えると、元のオブジェクトまで変わる。
 2017-10-07 [source](./2017-10-07_modify_property_value_of_object_returned_by_get_object_vars_and_then_original_object_is_changed.php)
 オブジェクトの場合は参照が渡っているため。
+
+### エイリアスのプロパティはcloneすると値ではなく、参照をコピーするので元のオブジェクトに影響する。
+2017-10-12 [source](./2017-10-12_alias_property_affects_original_when_clone.php)
