@@ -433,3 +433,8 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 
 ### エイリアスのプロパティはcloneすると値ではなく、参照をコピーするので元のオブジェクトに影響する。
 2017-10-12 [source](./2017-10-12_alias_property_affects_original_when_clone.php)
+
+### traitにinterfaceが使えないので他のtraitで代用する
+2017-10-16 [source](./2017-10-16_use_trait_insteadof_interface.php)
+抽象メソッド集のtraitを、traitでuseすれば良い。
+PrifixはHasかDeclares。後者が良い気がする。
