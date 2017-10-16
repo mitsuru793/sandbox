@@ -434,6 +434,12 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### エイリアスのプロパティはcloneすると値ではなく、参照をコピーするので元のオブジェクトに影響する。
 2017-10-12 [source](./2017-10-12_alias_property_affects_original_when_clone.php)
 
+### Closure::fromCallableで関数名と文字列を区別する
+2017-10-16 [source](./2017-10-16_distinguish_function_name_from_string_with_Closure_fromCallable.php)
+下記の記事によるとlaravelのCollectionのメソッドに、グローバル関数をclosureとして渡せるとある。
+しかし、is_floatだと引数が2つ渡るから警告が出る。
+[Joseph Silber](https://josephsilber.com/posts/2016/07/13/closure-from-callable-in-php-7-1#table-of-contents)
+
 ### traitにinterfaceが使えないので他のtraitで代用する
 2017-10-16 [source](./2017-10-16_use_trait_insteadof_interface.php)
 抽象メソッド集のtraitを、traitでuseすれば良い。
