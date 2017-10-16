@@ -434,6 +434,9 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### エイリアスのプロパティはcloneすると値ではなく、参照をコピーするので元のオブジェクトに影響する。
 2017-10-12 [source](./2017-10-12_alias_property_affects_original_when_clone.php)
 
+### Closure::fromCallableを使っても、protected/privateメソッドにアクセスできない。
+2017-10-16 [source](./2017-10-16_Closure_fromCallable_can_not_access_protected_and_private_methods.php)
+
 ### Closure::fromCallableで関数名と文字列を区別する
 2017-10-16 [source](./2017-10-16_distinguish_function_name_from_string_with_Closure_fromCallable.php)
 下記の記事によるとlaravelのCollectionのメソッドに、グローバル関数をclosureとして渡せるとある。
