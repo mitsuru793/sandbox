@@ -437,6 +437,15 @@ interfaceだけを意識して開発するをFactoryといった感じ。
 ### Closure::fromCallableを使っても、protected/privateメソッドにアクセスできない。
 2017-10-16 [source](./2017-10-16_Closure_fromCallable_can_not_access_protected_and_private_methods.php)
 
+### Closure::callで非publicメンバにアクセスする
+2017-10-16 [source](./2017-10-16_access_not_public_members_with_Closure_call.php)
+Closure::callでboolを返す判定メソッドを作った。
+使う時にcallというタイプヒントも増えるので今回の使い方だと、関数定義の方がメリットが有る。
+Closureだと`$this`にタイプヒントが使えない。
+
+メリットは`$this`に束縛するので、非publicメンバにアクセス出来ること。
+テスト時に役に立ちそう。
+
 ### Closure::fromCallableで関数名と文字列を区別する
 2017-10-16 [source](./2017-10-16_distinguish_function_name_from_string_with_Closure_fromCallable.php)
 下記の記事によるとlaravelのCollectionのメソッドに、グローバル関数をclosureとして渡せるとある。
