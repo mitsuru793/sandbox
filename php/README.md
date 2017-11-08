@@ -463,3 +463,7 @@ checkbox以外は常にデータが送られるため、全てのデータから
 jsを使いクライアントで、先に抽出してcheckした行のみをPOSTしても良い。
 
 `users[1][name]`とname属性のkeyにはレコードのidを使う。checkboxには`<input type="checkbox" name="selectedIds[]" value="1">`とレコードのidを入れる。checkboxは選択したユーザーのkeyになる。
+
+### フォームデータで、連想配列を使わずカラムごとにnameを分けて、サーバーサイドで連想配列にする。
+2017-11-08 [source](./2017-11-08_modify_array_to_associative_of_form_data_dividing_name_each_columns_at_server_side.php)
+`users[4][name]`ではなく、`user_names[4]`とする。
