@@ -456,3 +456,10 @@ Closureだと`$this`にタイプヒントが使えない。
 2017-10-16 [source](./2017-10-16_use_trait_insteadof_interface.php)
 抽象メソッド集のtraitを、traitでuseすれば良い。
 PrifixはHasかDeclares。後者が良い気がする。
+
+### サーバーサイドでcheckboxで選択した行のフォームデータのみを取得
+2017-11-08 [source](./2017-11-08_get_selected_form_data_with_checkbox_at_server_side.php)
+checkbox以外は常にデータが送られるため、全てのデータからcheckした行のみを抽出する。
+jsを使いクライアントで、先に抽出してcheckした行のみをPOSTしても良い。
+
+`users[1][name]`とname属性のkeyにはレコードのidを使う。checkboxには`<input type="checkbox" name="selectedIds[]" value="1">`とレコードのidを入れる。checkboxは選択したユーザーのkeyになる。
