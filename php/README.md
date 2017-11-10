@@ -467,3 +467,6 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 ### フォームデータで、連想配列を使わずカラムごとにnameを分けて、サーバーサイドで連想配列にする。
 2017-11-08 [source](./2017-11-08_modify_array_to_associative_of_form_data_dividing_name_each_columns_at_server_side.php)
 `users[4][name]`ではなく、`user_names[4]`とする。
+
+### Closure::bindを使って、privateなテストを楽する。
+2017-11-10 [source](./2017-11-10_make_private_test_easy_with_closure_bind.php)
