@@ -473,3 +473,6 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 
 ### Closure::bindを使って、privateなテストを楽する。
 2017-11-10 [source](./2017-11-10_make_private_test_easy_with_closure_bind.php)
+
+### privateプロパティから値を取得するリフレクションのヘルパー関数を作成
+2017-11-10 [source](./2017-11-10_make_reflection_helper_function_to_get_value_from_private_property.php)
