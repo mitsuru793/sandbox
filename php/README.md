@@ -468,5 +468,8 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 2017-11-08 [source](./2017-11-08_modify_array_to_associative_of_form_data_dividing_name_each_columns_at_server_side.php)
 `users[4][name]`ではなく、`user_names[4]`とする。
 
+### privateメソッドをclosure変換して外部で使う。
+2017-11-10 [source](./2017-11-10_change_private_method_to_closure_and_use_it_at_outside.php)
+
 ### Closure::bindを使って、privateなテストを楽する。
 2017-11-10 [source](./2017-11-10_make_private_test_easy_with_closure_bind.php)
