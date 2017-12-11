@@ -476,3 +476,6 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 
 ### privateプロパティから値を取得するリフレクションのヘルパー関数を作成
 2017-11-10 [source](./2017-11-10_make_reflection_helper_function_to_get_value_from_private_property.php)
+
+### 文字列の変数展開でメソッドを呼び出すことができる
+2017-12-11 [source](./2017-12-11_can_use_method_in_string.php)
