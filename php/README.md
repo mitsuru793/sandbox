@@ -482,3 +482,7 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 
 ### array_key_existsはオブジェクトにも使える
 2017-12-13 [source](./2017-12-13_can_use_array_key_exists_to_object.php)
+
+### オブジェクトのUndefinedプロパティへアクセスした時は、Noticeになるがarray_key_existsでは発生しない。
+2017-12-13 [source](./2017-12-13_not_occur_undefined_property_notice_in_array_key_exists.php)
+strict_typesを有効にしてもNoticeがエラーになることはない。
