@@ -479,3 +479,6 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 
 ### 文字列の変数展開でメソッドを呼び出すことができる
 2017-12-11 [source](./2017-12-11_can_use_method_in_string.php)
+
+### array_key_existsはオブジェクトにも使える
+2017-12-13 [source](./2017-12-13_can_use_array_key_exists_to_object.php)
