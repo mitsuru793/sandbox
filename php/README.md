@@ -489,3 +489,6 @@ strict_typesを有効にしてもNoticeがエラーになることはない。
 
 ### undefinedプロパティのアクセスに否定のビックリマークを使ってもNoticeは発生する
 2017-12-13 [source](./2017-12-13_occur_notice_even_if_use_exclamation_mark_when_access_undefined_property.php)
+
+### Warning:  mb_convert_encoding(): Unable to detect character encodingを発生させる
+2017-12-13 [source](./2017-12-13_occur_waring_for_that_unable_to_detect_charcter_encoding.php)
