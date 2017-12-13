@@ -486,3 +486,6 @@ jsを使いクライアントで、先に抽出してcheckした行のみをPOST
 ### オブジェクトのUndefinedプロパティへアクセスした時は、Noticeになるがarray_key_existsでは発生しない。
 2017-12-13 [source](./2017-12-13_not_occur_undefined_property_notice_in_array_key_exists.php)
 strict_typesを有効にしてもNoticeがエラーになることはない。
+
+### undefinedプロパティのアクセスに否定のビックリマークを使ってもNoticeは発生する
+2017-12-13 [source](./2017-12-13_occur_notice_even_if_use_exclamation_mark_when_access_undefined_property.php)
