@@ -492,3 +492,11 @@ strict_typesを有効にしてもNoticeがエラーになることはない。
 
 ### Warning:  mb_convert_encoding(): Unable to detect character encodingを発生させる
 2017-12-13 [source](./2017-12-13_occur_waring_for_that_unable_to_detect_charcter_encoding.php)
+
+### __toStingの中でエラーが発生してもスタックトレースで発生箇所の行数が分からない。
+2017-12-14 [source](./2017-12-14_cannot_know_line_number_of_error_from_stack_trace_for_tostring.php)
+> __toString() メソッド内から例外を投げることはできません。そうした場合、致命的なエラーが発生します。
+http://php.net/manual/ja/language.oop5.magic.php
+
+> Fatal error: Method class@anonymous::__toString() must not throw an exception, caught Error:
+が発生するから追えない?
