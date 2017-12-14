@@ -500,3 +500,7 @@ http://php.net/manual/ja/language.oop5.magic.php
 
 > Fatal error: Method class@anonymous::__toString() must not throw an exception, caught Error:
 が発生するから追えない?
+
+### str_replaceでブラケットを変数とした超簡単テンプレートシステムを作る
+2017-12-14 [source](./2017-12-14_simple_template_system_with_str_replace.php)
+{{NAME}}でテンプレートシステム用の変数となる。
