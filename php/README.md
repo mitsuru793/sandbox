@@ -507,3 +507,6 @@ http://php.net/manual/ja/language.oop5.magic.php
 ### str_replaceでブラケットを変数とした超簡単テンプレートシステムを作る
 2017-12-14 [source](./2017-12-14_simple_template_system_with_str_replace.php)
 {{NAME}}でテンプレートシステム用の変数となる。
+
+### rewindはカーソルが0になるだけで、内容が残る。
+2017-12-15 [source](./2017-12-15_rewind_move_cursor_to_postion_0_but_not_clear_content.php)
