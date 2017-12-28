@@ -36,7 +36,8 @@
         "erusev/parsedown": "^1.6",
         "league/plates": "^3.3",
         "salesforceeng/breakout": "^1.0",
-        "zendframework/zend-escaper": "^2.5"
+        "zendframework/zend-escaper": "^2.5",
+        "nesbot/carbon": "^1.22"
     },
     "autoload": {
         "psr-4": {
