@@ -513,3 +513,6 @@ http://php.net/manual/ja/language.oop5.magic.php
 
 ### 出力したDFP(広告)タグの分だけ、Javascriptを出力する。
 2017-12-29 [source](./2017-12-29_add_javascript_of_only_rendered_dfp.php)
+
+### 連想配列に入れたクロージャを呼び出す
+2017-12-29 [source](./2017-12-29_call_closure_in_associative_array.php)
