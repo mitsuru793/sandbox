@@ -516,3 +516,6 @@ http://php.net/manual/ja/language.oop5.magic.php
 
 ### 連想配列に入れたクロージャを呼び出す
 2017-12-29 [source](./2017-12-29_call_closure_in_associative_array.php)
+
+### 一番外側のHTMLタグをphp-simple-html-dom-parserで変換する
+2017-12-29 [source](./2017-12-29_change_most_outer_html_tag_with_php_simple_html_dom_parser.php)
