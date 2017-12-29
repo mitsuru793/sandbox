@@ -523,3 +523,7 @@ http://php.net/manual/ja/language.oop5.magic.php
 ### 組み込み関数strip_tagsの挙動を確認する
 2017-12-29 [source](./2017-12-29_confirm_behavior_of_strip_tags.php)
 許可したHTMLタグだけ削除しないホワイトリスト方式
+
+### LaravelのCarbonを使ってみる
+2017-12-29 [source](./2017-12-29_try_to_use_carbon.php)
+毎回インスタンス生成時にtimezoneを設定しないといけないのか？
