@@ -510,3 +510,6 @@ http://php.net/manual/ja/language.oop5.magic.php
 
 ### rewindはカーソルが0になるだけで、内容が残る。
 2017-12-15 [source](./2017-12-15_rewind_move_cursor_to_postion_0_but_not_clear_content.php)
+
+### 出力したDFP(広告)タグの分だけ、Javascriptを出力する。
+2017-12-29 [source](./2017-12-29_add_javascript_of_only_rendered_dfp.php)
