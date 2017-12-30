@@ -14,10 +14,23 @@ if (count($argv) < 3) {
 $filePath  = $argv[1];
 $titleWords = array_slice($argv, 2);
 
+// options
+$readme = !hasOptionAndRemove($titleWords, '--no-readme');
+
 $newPath = addDateAndTitle($filePath, $titleWords);
 rename($filePath, $newPath);
-commit($newPath, "add $newPath");
+commit($newPath, "add $newPath", $readme);
 
+function hasOptionAndRemove(array &$array, string $option)
+{
+  foreach ($array as $i => $v) {
+    if ($v === $option) {
+      unset($array[$i]);
+      return true;
+    }
+  }
+  return false;
+}
 
 function addDateAndTitle(string $filePath, array $titleWords) : string
 {
@@ -27,11 +40,13 @@ function addDateAndTitle(string $filePath, array $titleWords) : string
     return dirname($filePath) . '/' . date('Y-m-d') . '_' . $title . "$ext";
 }
 
-function commit(string $filePath, string $message)
+function commit(string $filePath, string $message, bool $readme)
 {
     git('stash');
-    exec(__DIR__ . '/toc 2017-* > README.md');
-    git('add README.md');
+    if ($readme) {
+      exec(__DIR__ . '/toc 2017-* > README.md');
+      git('add README.md');
+    }
     git("add $filePath");
     git("commit -m '$message'");
     git("stash pop");
