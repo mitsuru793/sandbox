@@ -1,0 +1,42 @@
+//-
+  bootstrap4でformを作る
+- var title = 'bootstrap4でformを作る'
+doctype html
+title title
+body
+  link(rel='stylesheet', href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  .container
+    .row.justify-content-center
+        h1 #{title}
+
+    .row.justify-content-center.mt-5
+      // formで送信されるname
+      - var inputFirstName = 'first-name'
+      - var inputLastName = 'last-name'
+      - var inputEmail = 'email'
+      - var inputPassword = 'password'
+      - var inputConsent = 'consent'
+
+      form(action="" method="POST")
+        .form-group.row
+          label.col-sm-4 氏名
+          input#input-last-name.col.form-control(type='text' placeholder='田中' name=inputFirstName required)
+          input#input-first-name.col.form-control(type='text' placeholder='太郎' name=inputLastName required)
+
+        .form-group.row
+          label.col-sm-4(for='input-email') メールアドレス
+          input#input-email.col.form-control(type='email', placeholder='example@gmail.com' name=inputEmail required)
+
+        .form-group.row
+          label.col-sm-4(for='input-password') パスワード
+          .row.col
+            input#input-password.form-control(type='password', placeholder='パスワード' name=inputPassword required)
+            small.form-text.text-muted 8文字上の英数字
+
+        .form-group.offset-4
+          .form-check
+            input#input-consent.form-check-input(type='checkbox' name=inputConsent required)
+            label.form-check-label(for='input-consent') 同意しますか？
+
+        .form-group.offset-4
+          button.btn.btn-primary(type='submit') 送信
