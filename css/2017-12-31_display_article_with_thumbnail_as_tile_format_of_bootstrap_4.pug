@@ -1,0 +1,37 @@
+//-
+  bootstrap4で記事をサムネイル付きのタイル表示する
+- var title = 'bootstrap4で記事をサムネイル付きのタイル表示する'
+
+// data url 280 x 180
+- const dummyImage = 'data:image/gif;base64,R0lGODdhGAG0ALMAAFxcXK2trXp6eo6OjpiYmKKiooSEhGZmZnBwcAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAGAG0AAAE/hDISau9OOvNu/9gKI5kaZ5oqq5s675wLM90bd94ru987//AoHBILBqPyKRyyWw6n9CodEqtWq/YrHbL7Xq/4LB4TC6bz+i0es1uu9/wuHxOr9vv+Lx+z+/7/4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3N3e3+Dh4uN0AgMEBekDAhoIBujpBAYHGwLwBetBCPkb7vfy9DTYS4ePXScDAQIQGGCgYQGFASsMCFBQgLmHAzAgeChPwDuK/hF3CEiYUcPEihcDlLSwUaEBjwRAciowz8LIAhZiGqyAcOWEAzIpbCwQEsfEnhp0XkBaASjRCkOLghppQGiAnRYQFkUnFQBQAjoOKFWZAcHVDForcL3w1VQBsBMQbghQdcJIrDwDIMAxdC8AshjkaqBL4S5avaUG4JygeG5dCY0H+5xhlkBEwBciZyDMePHmyaAmUhCMAShWzBjQcXhc1q/JyajzajBNIXZOz6JU/+S8NEBE2hrSlrVtFbQFqcQlAGWd9/fZ4L5J4cuLV4Jhu4gFZs8w0jgAs945JJeAsDqA69a3YxjpGpTZ6hMHuEagtHD0ds+1gwZfYjxklfPV/oddV1aZx4luLJ0UE11SCZcBcPWgVpkJ/kmwD0UL1tTcBhB+gh5PHClGkYZxBcBBh/pZqNAJFQJgQIgP0VQUaQ/m5wlQxg0lwG8vFtCeg6XZGOE6K7IY3nfp7PhTjz/eV6OBmByQjlT8sRWTa0Be8B4IIxVp5HDeibVdliwJuclaFry1QToD9qMeB2a12MF4amrAZnoETmBWe2e+qSKfNmW3pXZ5lknkkR4kt2eEfg3KnZN9AkqeiRw+t9wGonlQZXdf9naipbxhkOmBfpb46U4EwJVBnXCixml/3tEYJKqqYsBqJmJKip2uu5bIq6P41ZoeopKtV6p9WB77nZmV/Ej51FyI3qmcl7d1MOEFr4owXoXSekWtWrhdElUHVGUwEV7lWnBuq8JWkC0I46WbmZDyUrBuJnFapO++FuVVgJIWvsgsQgQoeYAADzGHFgcC8FrsYf9G5M5D5hFsMMKhXoJQQhx3zDGfF3qsUp70eUyAwzdUGLLHA5C8IMcnz3IAAjQXSsHMNU+BMwI2/0Qzz+QELfTQRBdt9NFIJ6300kw37fTTUEct9dRUV2311VhnrfXWXHft9ddghy322GSXbfbZaKet9tpst+3223DHLffcdNdt991456333nz37fffgAcu+OCEF2744YgnrvjijDfu+OOQRy755FFEAAA7'
+
+mixin articleCard(title, summury, link)
+  .card
+    img.card-img-top(src=dummyImage, alt='記事のサムネイル')
+    .card-body
+      h5.card-title= title
+      p.card-text= summury
+      a.btn.btn-primary(href=link) 続きを読む
+    .card-footer
+      ul.list-unstyled.m-0
+        li
+          small.text-muted 作成者 山田 太郎
+        li
+          small.text-muted 作成日 2017/12/31
+
+doctype html
+title #{title}
+body
+  link(rel='stylesheet', href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  style.
+    .card {
+      width: 18rem;
+    }
+  .container
+    .row.justify-content-center
+      h1 #{title}
+
+      .card-columns
+        - const summary = '記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容...'
+        each i in [1,2,3,4,5,6]
+          +articleCard('タイトル'+i, summary, '#'+i)
