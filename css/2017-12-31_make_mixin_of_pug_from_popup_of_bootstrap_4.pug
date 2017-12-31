@@ -1,0 +1,51 @@
+//-
+  bootstrap4でポップアップをpugのmixinする
+  PHP変数をmixinの引数だけに使えば、全体の構造が見やすくなる。
+  pugのmixinはblockが使うことが出来て、mixinにネスト記述を続ければ、それがblock変数として渡る。
+- var title = 'bootstrap4でポップアップをpugのmixinする'
+
+// formで送信されるname
+- var inputConsent = 'consent'
+
+mixin modalWithoutAction(prefixName)
+  - var modalName = prefixName + '-modal'
+  - var modalLabelName = modalName + '-label'
+  .modal.fade(
+    id=modalName
+    tabindex='-1', role='dialog', aria-labelledby=modalLabelName, aria-hidden='true'
+  )
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5.modal-title(id=modalLabelName) 利用規約
+          button.close(type='button', data-dismiss='modal', aria-label='閉じる')
+            span(aria-hidden='true') ×
+        .modal-body
+          block
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') 閉じる
+
+doctype html
+title #{title}
+body
+  link(rel='stylesheet', href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  script(src='./node_modules/jquery/dist/jquery.slim.min.js')
+  script(src='./node_modules/bootstrap/dist/js/bootstrap.min.js')
+  .container
+    .row.justify-content-center
+        h1 #{title}
+
+        form(action="" method="POST")
+          .form-group
+            .form-check
+              input#input-consent.form-check-input(type='checkbox' name=inputConsent required)
+              label.form-check-label(for='input-consent')
+                a(href='' data-toggle='modal' data-target='#consent-modal') 利用規約
+                | に同意しますか？
+          .form-row.justify-content-center
+            button.btn.btn-primary(type='submit') 送信
+
+          +modalWithoutAction('consent')
+            ol
+              li 連帯保証人を立てること。
+              li 解約時に利用期間が残っていても返金はされない。
