@@ -1,0 +1,67 @@
+//-
+  svgのハートをcssアニメーションでドキドキさせる
+  svgアイコンはillustratorで作成
+- var title = 'svgのハートをcssアニメーションでドキドキさせる'
+
+doctype html
+title #{title}
+body
+  link(rel='stylesheet', href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  style.
+    .main {
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+
+    /* ここからメイン */
+    .heart-btn {
+      margin: 0 auto;
+      width: 5em;
+      height: 5em;
+      position: relative;
+    }
+    .heart-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-40%,-50%);
+      margin: 0;
+      padding: 0;
+
+      color: #fff;
+    }
+    .heart-icon{
+      fill: none;
+      stroke: #ff006c;
+      stroke-linecap: round;
+      stroke-miterlimit: 12;
+      stroke-width: 100px;
+    }
+    .heart-icon {
+      animation: _heart-anime 1s ease 0s infinite;
+    }
+
+    @keyframes _heart-anime {
+      0% {
+        stroke-width: 90px;
+      }
+      25% {
+        stroke-width: 100px;
+      }
+      50% {
+        stroke-width: 110px;
+      }
+      100% {
+        stroke-width: 100px;
+      }
+    }
+
+  .main
+    h1 #{title}
+    .heart-btn
+      svg.heart-icon(data-name='heart-icon', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 229.38 193.89')
+        title heart
+        polyline.heart-stroke(points='173.38 56 114.69 114.69 56 56')
+      .heart-text 好き
