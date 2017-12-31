@@ -1,0 +1,7 @@
+#!/usr/bin/env php
+<?php
+$filePath  = $argv[1];
+$titleWords = implode(' ', array_slice($argv, 2));
+
+$cmdPath = __DIR__ .  '/../../php/bin/add';
+exec("$cmdPath $filePath --no-readme $titleWords");
