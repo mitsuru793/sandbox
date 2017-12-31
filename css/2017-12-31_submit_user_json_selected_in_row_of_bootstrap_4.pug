@@ -1,0 +1,91 @@
+//-
+  bootstrap4で選択した行のデータだけJSONで送信する
+- const title = 'bootstrap4で選択した行のデータだけJSONで送信する'
+
+// formで送信されるname
+- const inputConsent = 'consent'
+
+//-
+  user object
+    id
+    name
+    sex: man or woman
+    age
+    memo
+mixin row(user)
+  tr
+    th(scope='row')= user.id
+      input.invisible(type='checkbox' name='users[]' value=JSON.stringify(user))
+    td= user.name
+    case user.sex
+      when 'man'
+        td.sex-man 男
+      when 'woman'
+        td.sex-woman 女
+    td= user.age
+    td= user.memo
+
+-
+  const users = [
+    {
+      id: 1,
+      name: '山田 太郎',
+      sex: 'man',
+      age: 33,
+      memo: '短気',
+    }, {
+      id: 2,
+      name: '山田 花子',
+      sex: 'woman',
+      age: 28,
+      memo: '',
+    }, {
+      id: 3,
+      name: '金田 金時',
+      sex: 'man',
+      age: 40,
+      memo: '金持ち',
+    }, {
+      id: 4,
+      name: '鈴木 一郎',
+      sex: 'woman',
+      age: 22,
+      memo: '',
+    },
+  ]
+
+doctype html
+title #{title}
+body
+  link(rel='stylesheet', href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  script(src='./node_modules/jquery/dist/jquery.slim.min.js')
+  // script(src='./node_modules/bootstrap/dist/js/bootstrap.min.js')
+  style.
+    #userTable tbody tr {
+      cursor: pointer;
+    }
+  .container
+    .row.justify-content-center
+        h1 #{title}
+
+        form(action="http://localhost:8000/api/dump_request.php" method="POST")
+          table#userTable.table
+            caption ユーザーの一覧表
+            thead.thead-light
+              tr
+                th(scope='col') id
+                th(scope='col') 名前
+                th(scope='col') 性別
+                th(scope='col') 年齢
+                th(scope='col') メモ
+            tbody
+              each user in users
+                +row(user)
+          .form-row.justify-content-center
+            button.btn.btn-primary(type='submit') 送信
+  script.
+    $table = $('#userTable tbody tr').click('on', function () {
+      const $userRow = $(this).toggleClass('table-active')
+      $checkbox = $userRow.find("input[type='checkbox']")
+      $checkbox.prop('checked', !$checkbox.prop('checked'))
+    })
