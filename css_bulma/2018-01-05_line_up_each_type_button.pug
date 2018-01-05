@@ -1,0 +1,24 @@
+//-
+  各種類のボタンを並べる
+- const title = '各種類のボタンを並べる'
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{title}
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='./node_modules/bulma/css/bulma.css')
+  body
+    section.section
+      .container
+        h1.title #{title}
+        each color in ['nothing', 'primary', 'link', 'info', 'success', 'warning', 'danger']
+          .columns
+            .column
+              each size in ['small', 'nothing', 'medium', 'large']
+                button.button(class=`is-${color} is-${size}`)= size
+            .column
+              each state in ['is-outlined', 'is-loading']
+                button.button(class=`is-${color}`)= state
+              button.button(class=`is-${color}` disabled) disabled
