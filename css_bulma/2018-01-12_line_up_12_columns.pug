@@ -1,0 +1,41 @@
+//-
+  12カラムを並べる
+- const title = '12カラムを並べる'
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{title}
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='./node_modules/bulma/css/bulma.css')
+    style.
+      .square {
+        padding: 1.25rem 0;
+      }
+      .square.is-info {
+        background-color: #209cee;
+        color: #fff;
+      }
+      .square.is-success {
+        background-color: #23d160;
+        color: #fff;
+      }
+      .square.is-warning {
+        background-color: #ffdd57;
+        color: #fff;
+      }
+  body
+    section.section
+      .container
+        h1.title #{title}
+        each size in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+          .columns
+            .column(class=`is-${size}`)
+              p.square.is-info.has-text-centered= `is-${size}`
+
+            - let rest = 12 - size
+            while rest > 0
+              .column
+                p.square.has-text-centered(class=rest % 2 ? 'is-success' : 'is-warning') 1
+              - rest--
