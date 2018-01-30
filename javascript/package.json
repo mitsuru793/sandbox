@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pikaday": "^1.7.0",
+    "pikaday-time": "^1.6.1"
+  }
+}
