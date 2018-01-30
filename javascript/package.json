@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "choices.js": "^3.0.3",
     "flatpickr": "^4.2.4",
     "moment": "^2.20.1",
     "pikaday": "^1.7.0",
