@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flatpickr": "^4.2.4",
     "pikaday": "^1.7.0",
     "pikaday-time": "^1.6.1"
   }
