@@ -1,0 +1,40 @@
+//-
+  pikadayを日本語にして、timepickerも追加する。
+- const title = 'pikadayを日本語にして、timepickerも追加する。'
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{title}
+    link(rel='stylesheet' type='text/css' href='./node_modules/pikaday/css/pikaday.css')
+    script(src='./node_modules/moment/moment.js')
+    script(src='./node_modules/pikaday-time/pikaday.js')
+  body
+    h1 #{title}
+    input#datepicker(type='text')
+    script.
+      const picker = new Pikaday({
+        field: document.getElementById('datepicker'),
+        onSelect: function() {
+          console.log(this.getMoment().format('Do MMMM YYYY'));
+        },
+        showDaysInNextAndPreviousMonths: true,
+        enableSelectionDaysInNextAndPreviousMonths: true,
+        showTime: true,
+        showMinutes: true,
+        showSeconds: false, // 秒まで表示できる
+        use24hour: true, // falseだとAM/PM表示になるが0時がundefinedになる。
+        incrementHourBy: 1,
+        incrementMinuteBy: 10,
+        incrementSecondBy: 1,
+        autoClose: true,
+        timeLabel: '時刻', // optional string added to left of time select
+        i18n: {
+            previousMonth : '来月',
+            nextMonth     : '先月',
+            months        : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+            weekdays      : ['日曜','月曜','火曜','水曜','木曜','金曜','土曜'],
+            weekdaysShort : ['日','月','火','水','木','金','土'],
+        }
+      })
