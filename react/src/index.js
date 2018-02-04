@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-import Items from './2018-02-04_prop_without_value_will_be_true.js';
+import Search from './2018-02-04_create_incremental_search.js';
 
-ReactDOM.render(<Items />, document.getElementById("root"));
+ReactDOM.render(<Search />, document.getElementById("root"));
 registerServiceWorker();
