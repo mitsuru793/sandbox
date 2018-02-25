@@ -44,7 +44,7 @@ function commit(string $filePath, string $message, bool $readme)
 {
     git('stash');
     if ($readme) {
-      exec(__DIR__ . '/toc 2017-* > README.md');
+      exec(__DIR__ . '/toc 201* > README.md');
       git('add README.md');
     }
     git("add $filePath");

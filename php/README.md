@@ -527,3 +527,86 @@ http://php.net/manual/ja/language.oop5.magic.php
 ### LaravelのCarbonを使ってみる
 2017-12-29 [source](./2017-12-29_try_to_use_carbon.php)
 毎回インスタンス生成時にtimezoneを設定しないといけないのか？
+
+### 複数トレイトをuseして衝突するとfatalエラーだが、トレイトでトレイトを使った場合はオーバーライドされる。
+2018-01-09 [source](./2018-01-09_trait_in_trait_overrides_method_but_not_occur_fatal_error.php)
+
+### ReflectionClassを使ったコンストラクタを呼び出さずにインスタンスを生成
+2018-01-18 [source](./2018-01-18_new_instance_without_construct_by_reflectionclass.php)
+ReflectionClassを使ってもprivateのコンストラクタにはアクセス出来ない。
+
+### クラス定数でプロパティを初期化する
+2018-01-23 [source](./2018-01-23_init_property_with_class_const_value.php)
+
+### 文字展開の波括弧を二重にすると、変数名を動的に解決できる。
+2018-01-25 [source](./2018-01-25_dynamic_resolve_variable_name_width_double_curly_braces.php)
+
+### JavascriptのMobius1/SelectrのEventクラスをPHPで書き直す
+2018-01-30 [source](./2018-01-30_rewrite_event_class_of_mobius1_selectr_in_javascript.php)
+Github: https://github.com/Mobius1/Selectr
+offの時に関数としてクロージャを渡せない。変数を渡す必要がある。
+
+### デフォルトでcloneはプリミティブなプロパティをコピーしてくれる。
+2018-02-05 [source](./2018-02-05_clone_copies_primitive_property_by_default.php)
+
+### `__get`を上書きしても、Collectionはアクセス自体しないので意味がない。
+2018-02-05 [source](./2018-02-05_overwriting_get_is_meaningless_because_collection_does_not_access_undefined_property.php)
+
+### 引数の配列は、再代入してからunsetしないと副作用が出る。
+2018-02-05 [source](./2018-02-05_unset_array_of_argument_without_reassigning_causes_a_side_effect.php)
+
+### 引数が配列の場合はunsetしても副作用はないが、objectだと副作用がある。
+2018-02-05 [source](./2018-02-05_unset_causes_a_side_effect_to_object_but_array.php)
+
+### laravelのcollectionのwhenは真の時のみ、collectionを受取り加工する。
+2018-02-06 [source](./2018-02-06_laravel_collection_gets_a_collection_and_processs_it_when_true.php)
+
+### PhpRedisを拡張して使いやすくする
+2018-02-06 [source](./2018-02-06_make_php_redis_easy_to_use_by_extending.php)
+
+### PhpRedisにprefixを有効にすると、keyに自動で付与される。
+2018-02-06 [source](./2018-02-06_php_redis_adds_a_prefix_to_key_if_enables_its_option.php)
+
+### PhpRedisで値を更新する
+2018-02-06 [source](./2018-02-06_update_values_with_php_redis.php)
+
+### 引数が省略されたら、環境変数の値をカンマで分割する。
+2018-02-07 [source](./2018-02-07_divide_env_value_by_comma_when_omitting_a_argument.php)
+
+### PHP7でforeachでポインタが使われなくなったことを確認する
+2018-02-07 [source](./2018-02-07_php_7_does_not_use_pointer_in_foreach.php)
+`end()`の後に`reset()`を呼び出す必要はなくなった。
+[PHPのforeachで参照渡しを使ったときの落とし穴 \- Qiita](https://qiita.com/ttskch/items/c6d8ea00c57640c52cd8)
+
+### publicなコンストラクタをオーバーライドしてprivateにできない
+2018-02-13 [source](./2018-02-13_can_not_change_public_construct_to_private_overwriting.php)
+
+### Redisのコンストラクタを拡張して接続までする
+2018-02-13 [source](./2018-02-13_extend_construct_of_redis_to_connect.php)
+
+### 配列の一番深い階層を調べる
+2018-02-19 [source](./2018-02-19_search_how_long_deep_of_array.php)
+thanks: https://stackoverflow.com/questions/262891/is-there-a-way-to-find-out-how-deep-a-php-array-is
+
+### 配列のネストした要素も含めて、全体のカラム数を調べる。
+2018-02-20 [source](./2018-02-20_search_number_of_entire_columns_including_nested_array.php)
+
+### for文の条件文に関数を使うと毎回実行される。
+2018-02-21 [source](./2018-02-21_execute_function_each_loop_in_conditional_of_for_statement.php)
+
+### キャプチャしたものもpreg_splitの結果に含める
+2018-02-21 [source](./2018-02-21_include_captured_into_reesult_of_preg_split.php)
+
+### Twitter Public APIのsince_idとmax_idの挙動を調べる
+2018-02-21 [source](./2018-02-21_search_since_id_and_max_id_of_twitter_public_api.php)
+since_idとmax_idのどちらを指定しても、最新からcount分を取得しようとする。
+max_idは最新のラインを下げるのに使う。
+since_idからcount分を取得するわけではない。
+
+max_idは「以下」を表し、指定idのツイートも含む。
+since_idは「より大きい」を表し、指定idのツイートを含まない。
+
+### foreachで次の要素を取得するのにnextを使う
+2018-02-21 [source](./2018-02-21_use_next_in_foreach.php)
+nextがない場合はfalseを返す。
+nextを1ループで複数回使うと困る。
