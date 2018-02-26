@@ -611,5 +611,8 @@ since_idは「より大きい」を表し、指定idのツイートを含まな�
 nextがない場合はfalseを返す。
 nextを1ループで複数回使うと困る。
 
+### array_columnはobjectにも使える
+2018-02-26 [source](./2018-02-26_array_column_can_use_object_too.php)
+
 ### array_mapでkeyを指定できないためforeachを使う
 2018-02-26 [source](./2018-02-26_use_foreach_because_array_map_cannot_specify_key.php)
