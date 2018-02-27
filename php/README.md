@@ -616,3 +616,6 @@ nextを1ループで複数回使うと困る。
 
 ### array_mapでkeyを指定できないためforeachを使う
 2018-02-26 [source](./2018-02-26_use_foreach_because_array_map_cannot_specify_key.php)
+
+### キャストとデフォルト値を分けるには三項演算子を使う
+2018-02-27 [source](./2018-02-27_devide_cast_and_default_value_with_tertiary_operator.php)
