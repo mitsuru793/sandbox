@@ -619,3 +619,6 @@ nextを1ループで複数回使うと困る。
 
 ### キャストとデフォルト値を分けるには三項演算子を使う
 2018-02-27 [source](./2018-02-27_devide_cast_and_default_value_with_tertiary_operator.php)
+
+### rangeのchunkをgeneratorで作る
+2018-02-27 [source](./2018-02-27_make_range_chunk_with_generator.php)
