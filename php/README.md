@@ -625,3 +625,6 @@ nextを1ループで複数回使うと困る。
 
 ### rangeのchunkをgeneratorで作る
 2018-02-27 [source](./2018-02-27_make_range_chunk_with_generator.php)
+
+### PDOStatementでinsertを実行しても、挿入レコードをfetchできない。
+2018-02-28 [source](./2018-02-28_cannot_fetch_inserted_record_with_pdo_statement.php)
