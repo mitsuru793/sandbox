@@ -628,3 +628,8 @@ nextを1ループで複数回使うと困る。
 
 ### PDOStatementでinsertを実行しても、挿入レコードをfetchできない。
 2018-02-28 [source](./2018-02-28_cannot_fetch_inserted_record_with_pdo_statement.php)
+
+### Eloquentのcreateの戻り値は、指定していないカラム値が代入されていない。
+2018-03-01 [source](./2018-03-01_return_value_of_eloquent_create_method_does_not_have_property_assigned_no_specified_column.php)
+DB側のDefault値などは入っていない。INSERT時にSELECTは走っていない。
+createでINSERTとSELECTの2回、IOが発生するのか気になったが1回だった。
