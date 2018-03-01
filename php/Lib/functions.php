@@ -43,8 +43,12 @@ function putsExecTime(callable $fn, int $num = 1, $level = 0, $indent = '    ') 
     puts(execTime($fn, $num), $level, $indent);
 }
 
-function makeLaravelSqlBuilder(array $config) : MySqlBuilder
+function makeLaravelSqlBuilder(array $config = []) : MySqlBuilder
 {
+    if (empty($config)) {
+        $config = require_once __DIR__ . '/DB/config.php';
+    }
+
     $capsule = new Capsule;
 
     // Laravel5.4からはイベントリスナーでフェッチモードを変更
@@ -60,8 +64,12 @@ function makeLaravelSqlBuilder(array $config) : MySqlBuilder
     return Capsule::schema();
 }
 
-function makePDO(array $config, $options = [])
+function makePDO(array $config = [], $options = [])
 {
+    if (empty($config)) {
+        $config = require_once __DIR__ . '/DB/config.php';
+    }
+
     $ops = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
