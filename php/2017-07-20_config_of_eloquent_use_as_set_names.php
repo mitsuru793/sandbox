@@ -1,6 +1,7 @@
 <?php
 /*
 EloquentのconfigのcharsetはSET NAMESの代わりになる。
+
 [MySQL :: MySQL 5\.6 リファレンスマニュアル :: 10\.1\.4 接続文字セットおよび照合順序](https://dev.mysql.com/doc/refman/5.6/ja/charset-connection.html)
 */
 

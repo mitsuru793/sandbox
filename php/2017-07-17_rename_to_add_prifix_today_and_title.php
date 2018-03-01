@@ -1,6 +1,7 @@
 <?php
 /*
 ファイル名の先頭に今日の日付をつけて、タイトルを変える。拡張子は変更しない。
+
 ```
 script tmp.php hello world
 tmp.php -> 2017-07-17_hello_world.php

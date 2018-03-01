@@ -1,6 +1,7 @@
 <?php
 /*
 underscore.phpのクラスメソッドを呼び出している部分を正規表現で抽出する
+
 `__::pluck($people, 'name');`
 */
 
