@@ -632,6 +632,9 @@ nextを1ループで複数回使うと困る。
 ### get_classでobjectはクラス名を返すようなValueObjectを作る
 2018-03-01 [source](./2018-03-01_make_value_object_like_get_class_return_class_name_instaed_of_object.php)
 
+### パスをリネームして日付を付けるのをSplFileInfoでやってみる
+2018-03-01 [source](./2018-03-01_rename_path_and_add_date_with_spl_file_info.php)
+
 ### Eloquentのcreateの戻り値は、指定していないカラム値が代入されていない。
 2018-03-01 [source](./2018-03-01_return_value_of_eloquent_create_method_does_not_have_property_assigned_no_specified_column.php)
 DB側のDefault値などは入っていない。INSERT時にSELECTは走っていない。
