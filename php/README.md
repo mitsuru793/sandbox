@@ -642,3 +642,6 @@ createでINSERTとSELECTの2回、IOが発生するのか気になったが1回�
 
 ### phpでgit pushの引数を必須にして、short_open_tagが有効かをチェックする。
 2018-03-10 [source](./2018-03-10_require_argument_of_git_push_and_confirm_to_enable_short_open_tag.php)
+
+### シリアライズで再帰的なcloneを再現する
+2018-03-10 [source](./2018-03-10_serialize_reproduces_clone_recursively.php)
