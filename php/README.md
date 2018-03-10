@@ -639,3 +639,6 @@ nextを1ループで複数回使うと困る。
 2018-03-01 [source](./2018-03-01_return_value_of_eloquent_create_method_does_not_have_property_assigned_no_specified_column.php)
 DB側のDefault値などは入っていない。INSERT時にSELECTは走っていない。
 createでINSERTとSELECTの2回、IOが発生するのか気になったが1回だった。
+
+### phpでgit pushの引数を必須にして、short_open_tagが有効かをチェックする。
+2018-03-10 [source](./2018-03-10_require_argument_of_git_push_and_confirm_to_enable_short_open_tag.php)
