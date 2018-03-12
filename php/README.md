@@ -645,3 +645,6 @@ createでINSERTとSELECTの2回、IOが発生するのか気になったが1回�
 
 ### シリアライズで再帰的なcloneを再現する
 2018-03-10 [source](./2018-03-10_serialize_reproduces_clone_recursively.php)
+
+### in_arrayの引数3を指定しないと型変換がされる
+2018-03-12 [source](./2018-03-12_cast_in_array_if_third_argument_is_specified.php)
