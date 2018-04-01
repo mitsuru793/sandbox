@@ -648,3 +648,7 @@ createでINSERTとSELECTの2回、IOが発生するのか気になったが1回�
 
 ### in_arrayの引数3を指定しないと型変換がされる
 2018-03-12 [source](./2018-03-12_cast_in_array_if_third_argument_is_specified.php)
+
+### ミドルウェアで正規表現を重ねる
+2018-04-01 [source](./2018-04-01_overlay_regexp_with_middlewares.php)
+ANDを示すスペースをORに変換します。クオートで囲んでいる場合は無視します。
