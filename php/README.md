@@ -652,3 +652,8 @@ createでINSERTとSELECTの2回、IOが発生するのか気になったが1回�
 ### ミドルウェアで正規表現を重ねる
 2018-04-01 [source](./2018-04-01_overlay_regexp_with_middlewares.php)
 ANDを示すスペースをORに変換します。クオートで囲んでいる場合は無視します。
+
+### laravelのpipelineをシンプルにする
+2018-04-02 [source](./2018-04-02_make_laravel_pipeline_class_simple.php)
+thanks: https://github.com/illuminate/pipeline
+`__invoke`を実装すれば良いだけにする。
