@@ -1,5 +1,6 @@
 #!/bin/bash
 coffee --bare --compile "$1"
 compiled="${1%.*}.js"
-node "$compiled"
+shift
+node "$compiled" "$@"
 rm "$compiled"
