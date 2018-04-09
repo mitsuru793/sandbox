@@ -657,3 +657,7 @@ ANDを示すスペースをORに変換します。クオートで囲んでいる
 2018-04-02 [source](./2018-04-02_make_laravel_pipeline_class_simple.php)
 thanks: https://github.com/illuminate/pipeline
 `__invoke`を実装すれば良いだけにする。
+
+### json_encodeに連想配列、stdClassのどちらを渡しても結果は同じ
+2018-04-09 [source](./2018-04-09_json_encode_ignore_type_for_associative_array_and_stdclass.php)
+デコードする時は配列にするかstdClassにするか選べる。
