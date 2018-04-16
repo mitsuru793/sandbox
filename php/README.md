@@ -661,3 +661,6 @@ thanks: https://github.com/illuminate/pipeline
 ### json_encodeに連想配列、stdClassのどちらを渡しても結果は同じ
 2018-04-09 [source](./2018-04-09_json_encode_ignore_type_for_associative_array_and_stdclass.php)
 デコードする時は配列にするかstdClassにするか選べる。
+
+### collectionのdiffはtargetにだけある値を検出するわけではない
+2018-04-16 [source](./2018-04-16_collection_diff_does_not_list_values_of_only_target.php)
