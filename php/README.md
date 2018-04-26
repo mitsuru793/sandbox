@@ -664,3 +664,6 @@ thanks: https://github.com/illuminate/pipeline
 
 ### collectionのdiffはtargetにだけある値を検出するわけではない
 2018-04-16 [source](./2018-04-16_collection_diff_does_not_list_values_of_only_target.php)
+
+### laravelのCollectionのfirstとlastは空配列に使うとnullが返る。
+2018-04-26 [source](./2018-04-26_collection_of_laravel_returns_null_when_cal_its_first_or_last_method.php)
