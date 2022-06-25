@@ -7,7 +7,7 @@
     "express": "^4.15.3",
     "jquery": "^3.2.1",
     "meow": "^4.0.0",
-    "node-fetch": "^1.7.1",
+    "node-fetch": "^2.6.7",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
   }
