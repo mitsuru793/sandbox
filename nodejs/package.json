@@ -4,7 +4,7 @@
     "serve": "webpack-dev-server --inline"
   },
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.17.3",
     "jquery": "^3.2.1",
     "meow": "^4.0.0",
     "node-fetch": "^1.7.1",
